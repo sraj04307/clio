@@ -1,0 +1,38 @@
+header nav i{
+    padding-left: 5px;
+}
+
+.header-3 .header-main .header-right {
+    gap: 30px;
+}
+
+.header-main{
+    padding: 0 !important;
+}
+
+.header-3 .header-main .header-right .header-button .theme-btn {
+    padding: 12px 20px !important;
+}
+
+.header-main .main-menu ul li {
+    margin-right: 25px !important;
+}
+
+.header-main .main-menu ul li a{
+    text-transform: uppercase !important;
+}
+
+
+.header-main .main-menu ul li .submenu li a {
+    position: relative;
+    z-index: 11;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--header);
+    padding: 1px 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    text-transform: capitalize !important;
+}

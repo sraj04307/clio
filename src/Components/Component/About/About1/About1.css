@@ -1,0 +1,28 @@
+.about-wrapper-2 .about-content p {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.about-image{
+    position: relative;
+}
+
+.about-image .content{
+    position: absolute !important;
+    bottom: 10px !important;
+    right: 10px !important;
+    background: #e7e7e7;
+    padding: 10px 20px;
+}
+
+
+
+.about-wrapper-2 .about-content p {
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+    display: inline-block;
+}
+
+.about-wrapper-2 .about-content .about-author{
+    margin-top: 30px;
+}

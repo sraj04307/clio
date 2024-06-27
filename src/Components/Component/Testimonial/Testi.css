@@ -1,0 +1,11 @@
+.testimonial-box-items{
+    margin-bottom: 60px !important;
+}
+
+.contact-info-area .contact-info-items .content h3{
+    font-size: 18px;
+}
+
+.client-image{
+    background: url('../../../assets/img/testimonial/02.jpg');
+}

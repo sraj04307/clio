@@ -1,0 +1,9 @@
+.service-section h3::after{
+    content: '';
+    background: #0f0d1d;
+    display: block;
+    width: 70px;
+    height: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}

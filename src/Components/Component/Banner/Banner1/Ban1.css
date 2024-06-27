@@ -1,0 +1,41 @@
+.sr-slider-img{
+    background-image: url("../../../../assets//img/Home\ Page\ Banner/1.jpg");
+}
+
+.sr-slider-image2{
+    background-image: url("../../../../assets//img/Home\ Page\ Banner/2.jpg");
+    
+}
+.sr-slider-image3{
+    background-image: url("../../../../assets//img/Home\ Page\ Banner/3.jpg");
+}
+
+
+@media (max-width: 1399px) {
+    .hero-3 .hero-content {
+        padding: 80px 0 !important;
+    }
+}
+.section-padding {
+    padding: 50px 0 !important;
+}
+
+.theme-btn {
+    background-color: var(--theme);
+    color: var(--white);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 0;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+    line-height: 1;
+}
+
+.theme-btn.border-white{
+    padding: 15px 20px;
+}

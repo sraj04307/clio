@@ -1,0 +1,8 @@
+.service-section-3{
+    /* background-image: url('assets/img/service/service-bg-3.jpg'); */
+}
+
+.service-card-items .service-content .icon{
+    margin-top: -50px !important;
+    margin-bottom: 20px !important;
+}
