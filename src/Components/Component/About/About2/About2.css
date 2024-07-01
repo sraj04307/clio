@@ -1,7 +1,28 @@
-.about-section{
+.about-section2{
     background: url('../../../../assets/img/service/service-bg-2.jpg');
 }
 
 .about-image-1{
     background: url('../../../../assets/img/About Us/ab2.jpg');
+}
+
+.about-section2 .left{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.about-section2 .left.active{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+}
+.about-section2 .right{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.s ease-in-out;
+}
+.about-section2 .right.active{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
 }

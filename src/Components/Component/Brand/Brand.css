@@ -1,0 +1,4 @@
+.brand-wrapper .brand-image{
+    filter: grayscale(0) !important;
+    opacity: 1 !important;
+}

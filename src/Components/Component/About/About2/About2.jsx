@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './About2.css'
 import img1 from '../../../../assets/img/About Us/ab1.jpg'
@@ -9,12 +9,30 @@ const About2 = () => {
 
     const [counterOn, setCounterOn] = useState(true);
 
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 200) { 
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
     return (
-        <section className="about-section section-padding fix bg-cover">
+        <section className="about-section2 section-padding fix bg-cover">
             <div className="container">
                 <div className="about-wrapper style-2">
                     <div className="row">
-                        <div className="col-lg-6">
+                        <div className={isScrolled?"col-lg-6 left active":'col-lg-6 left '}>
                             <div className="about-image-items">
                                 <div className="circle-shape">
                                     <img src="assets/img/about/circle.png" alt="shape-img" />
@@ -46,7 +64,7 @@ const About2 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-6 mt-4 mt-lg-0">
+                        <div className={isScrolled?"col-lg-6 mt-4 mt-lg-0 right active":'col-lg-6 mt-4 mt-lg-0 right'}>
                             <div className="about-content">
                                 <div className="section-title">
                                     <span className="wow fadeInUp">ABOUT INFOTECK</span>

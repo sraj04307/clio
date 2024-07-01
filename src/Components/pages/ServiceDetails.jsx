@@ -1,5 +1,6 @@
 import React from 'react'
 import Banner2 from '../Component/Banner/Banner2/Banner2'
+import Footer from '../Component/Footer/Footer'
 
 const ServiceDetails = () => {
   return (
@@ -176,6 +177,8 @@ const ServiceDetails = () => {
                 </div>
             </div>
         </section>
+
+        <Footer/>
     </>
   )
 }

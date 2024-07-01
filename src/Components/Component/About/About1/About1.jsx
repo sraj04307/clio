@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './About1.css'
 import { Link } from 'react-router-dom'
 import CountUp from 'react-countup'
@@ -8,12 +8,34 @@ const About = () => {
 
     const [counterOn, setCounterOn] = useState(true);
 
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 100) { 
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+
+
     return (
-        <section className="about-section section-padding fix bg-cover">
+        <section className={isScrolled ? "about-section section-padding fix bg-cover active" : 'about-section section-padding fix bg-cover'}>
             <div className="container">
                 <div className="about-wrapper-2">
                     <div className="row">
-                        <div className="col-lg-6 wow fadeInUp" data-wow-delay=".4s">
+    
+                        <div className={isScrolled ? 'myfadein-left active col-lg-6 wow fadeInUp' : 'col-lg-6 wow fadeInUp myfadein-left'} data-wow-delay=".4s">
                             <div className="about-image">
                                 <div className="shape-image">
                                     <img src="assets/img/about/shape.png" alt="shape-img" />
@@ -22,17 +44,17 @@ const About = () => {
                                     <img src="assets/img/about/circle.png" alt="shape-img" />
                                 </div>
                                 <img src="assets/img/about/07.jpg" alt="about-img" />
-                                <div className="content">
+                                <div className={isScrolled ? "content active" : 'content'}>
                                     <h2>
                                         <span className="count">
                                             <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
 
-                                        </ScrollTrigger>
+                                            </ScrollTrigger>
                                             {counterOn && <CountUp
-                                                    start={0}
-                                                    end={150}
-                                                    duration={4}
-                                                />
+                                                start={0}
+                                                end={150}
+                                                duration={4}
+                                            />
                                             }</span>+
                                     </h2>
                                     <span>Satisfied Clients</span>
@@ -40,7 +62,8 @@ const About = () => {
 
                             </div>
                         </div>
-                        <div className="col-lg-6 mt-4 mt-lg-0">
+
+                        <div className={isScrolled ? 'myfadein-right active col-lg-6 wow fadeInUp' : 'col-lg-6 wow fadeInUp myfadein-right'}>
                             <div className="about-content">
                                 <div className="section-title">
                                     <span className="wow fadeInUp">ABOUT INFOTECK</span>

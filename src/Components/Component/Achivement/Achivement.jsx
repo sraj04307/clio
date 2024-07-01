@@ -1,29 +1,30 @@
 import React,{useState} from 'react'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
+import './Achivement.css'
 
 const Achivement = () => {
 
     const [counterOn, setCounterOn] = useState(true);
   return (
-    <section class="achievement-section-3 fix section-bg-2">
-    <div class="shape-image">
+    <section className="achievement-section-3 fix section-bg-2">
+    <div className="shape-image">
         <img src="assets/img/achiv-shape.png" alt="shape-img"/>
     </div>
-    <div class="container">
-        <div class="achievement-wrapper style-2">
-            <div class="section-title mb-0">
-                <span class="text-white wow fadeInUp">achievement</span>
-                <h2 class="text-white wow fadeInUp" data-wow-delay=".3s">
-                    We Are Increasing <br/> Business Success
+    <div className="container">
+        <div className="achievement-wrapper style-2">
+            <div className="section-title mb-0 w-100 text-center">
+                <span className="text-white wow fadeInUp w-100">achievement</span>
+                <h2 className="text-white wow fadeInUp w-100" data-wow-delay=".3s">
+                    Why Choose Us
                 </h2>
             </div>
-            <div class="counter-area">
-                <div class="counter-items wow fadeInUp" data-wow-delay=".3s">
-                    <div class="icon">
+            <div className="counter-area">
+                <div className="counter-items wow fadeInUp" data-wow-delay=".3s">
+                    <div className="icon">
                         <img src="assets/img/achievement-icon/01.svg" alt="icon-img"/>
                     </div>
-                    <div class="content">
+                    <div className="content">
                         <h2><span className="count">
                                             <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
 
@@ -37,11 +38,11 @@ const Achivement = () => {
                         <p>Satisfied Clients</p>
                     </div>
                 </div>
-                <div class="counter-items wow fadeInUp" data-wow-delay=".5s">
-                    <div class="icon">
+                <div className="counter-items wow fadeInUp" data-wow-delay=".5s">
+                    <div className="icon">
                         <img src="assets/img/achievement-icon/02.svg" alt="icon-img"/>
                     </div>
-                    <div class="content">
+                    <div className="content">
                         <h2><span className="count">
                                             <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
 
@@ -55,11 +56,11 @@ const Achivement = () => {
                         <p>Finished Projects</p>
                     </div>
                 </div>
-                <div class="counter-items wow fadeInUp" data-wow-delay=".7s">
-                    <div class="icon">
+                <div className="counter-items wow fadeInUp" data-wow-delay=".7s">
+                    <div className="icon">
                         <img src="assets/img/achievement-icon/03.svg" alt="icon-img"/>
                     </div>
-                    <div class="content">
+                    <div className="content">
                         <h2><span className="count">
                                             <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
 
@@ -73,11 +74,11 @@ const Achivement = () => {
                         <p>Skilled Experts</p>
                     </div>
                 </div>
-                <div class="counter-items wow fadeInUp" data-wow-delay=".9s">
-                    <div class="icon">
+                <div className="counter-items wow fadeInUp" data-wow-delay=".9s">
+                    <div className="icon">
                         <img src="assets/img/achievement-icon/04.svg" alt="icon-img"/>
                     </div>
-                    <div class="content">
+                    <div className="content">
                         <h2><span className="count">
                                             <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
 

@@ -1,14 +1,33 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const Footer = () => {
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 200) { 
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
   return (
     <footer className="footer-section footer-bg">
     <div className="container">
         <div className="contact-info-area ">
-            <div className="contact-info-items wow fadeInUp " data-wow-delay=".3s" >
-                <div className="icon">
+            <div className={isScrolled?"contact-info-items wow fadeInUp active1":'contact-info-items wow fadeInUp non-active1'} data-wow-delay=".3s" >
+                <div className='icon'>
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23.7891 1.81641H16.7578C13.3658 1.81641 10.6055 4.5767 10.6055 7.96875C10.6055 11.063 12.9015 13.631 15.8789 14.0585V16.7578C15.8788 16.9317 15.9303 17.1016 16.0268 17.2462C16.1234 17.3907 16.2607 17.5033 16.4214 17.5697C16.7456 17.705 17.1258 17.6325 17.3793 17.3792L20.6374 14.1211H23.7891C27.1811 14.1211 30 11.3608 30 7.96875C30 4.5767 27.1811 1.81641 23.7891 1.81641ZM16.7578 8.84754C16.2723 8.84754 15.8789 8.45402 15.8789 7.96863C15.8789 7.48324 16.2723 7.08973 16.7578 7.08973C17.2432 7.08973 17.6367 7.48324 17.6367 7.96863C17.6367 8.45402 17.2432 8.84754 16.7578 8.84754ZM20.2734 8.84754C19.7879 8.84754 19.3945 8.45402 19.3945 7.96863C19.3945 7.48324 19.7879 7.08973 20.2734 7.08973C20.7588 7.08973 21.1523 7.48324 21.1523 7.96863C21.1523 8.45402 20.7588 8.84754 20.2734 8.84754ZM23.7891 8.84754C23.3036 8.84754 22.9102 8.45402 22.9102 7.96863C22.9102 7.48324 23.3036 7.08973 23.7891 7.08973C24.2745 7.08973 24.668 7.48324 24.668 7.96863C24.668 8.45402 24.2745 8.84754 23.7891 8.84754Z" fill="#3C72FC"/>
                         <path d="M19.7461 28.1836C21.2 28.1836 22.3828 27.0008 22.3828 25.5469V22.0312C22.3828 21.6527 22.1408 21.3171 21.782 21.1978L16.5209 19.44C16.2634 19.3533 15.9819 19.3928 15.7553 19.5421L13.5186 21.033C11.1496 19.9035 8.33871 17.0925 7.20914 14.7236L8.7 12.4868C8.77415 12.3754 8.82189 12.2485 8.83958 12.1158C8.85728 11.9831 8.84447 11.8482 8.80213 11.7212L7.04432 6.46014C6.98611 6.28516 6.87428 6.13295 6.72469 6.02512C6.5751 5.91728 6.39534 5.85929 6.21094 5.85938H2.63672C1.18277 5.85938 0 7.02979 0 8.48373C0 18.61 9.6198 28.1836 19.7461 28.1836Z" fill="#3C72FC"/>
@@ -21,8 +40,8 @@ const Footer = () => {
                     </h3>
                 </div>
             </div>
-            <div className="contact-info-items wow fadeInUp " data-wow-delay=".5s">
-                <div className="icon">
+            <div className={isScrolled?"contact-info-items wow fadeInUp active2":'contact-info-items wow fadeInUp non-active2'} data-wow-delay=".3s" >
+            <div className='icon'>
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12.6498 10.8272C12.8023 10.914 12.976 10.9569 13.1514 10.9509C13.3312 10.9344 13.5053 10.8798 13.6623 10.7906L24.9217 4.22062C24.677 3.79416 24.3245 3.43955 23.8994 3.19239C23.4744 2.94523 22.9918 2.81422 22.5001 2.8125H3.75014C3.2583 2.81406 2.77554 2.94499 2.35032 3.19216C1.9251 3.43932 1.5724 3.79402 1.32764 4.22062L12.6498 10.8272Z" fill="#3C72FC"/>
                         <path d="M25.3125 6.15918V12.6748C24.4104 12.3501 23.4587 12.1852 22.5 12.1873C20.2633 12.1908 18.1192 13.0808 16.5376 14.6624C14.956 16.244 14.066 18.3881 14.0625 20.6248C14.0623 20.9382 14.0811 21.2512 14.1188 21.5623H3.75C3.00476 21.5601 2.29069 21.263 1.76372 20.7361C1.23676 20.2091 0.939726 19.495 0.9375 18.7498V6.15918L11.7094 12.4498C12.1434 12.6872 12.6303 12.8116 13.125 12.8116C13.6197 12.8116 14.1066 12.6872 14.5406 12.4498L25.3125 6.15918Z" fill="#3C72FC"/>
@@ -36,8 +55,8 @@ const Footer = () => {
                     </h3>
                 </div>
             </div>
-            <div className="contact-info-items wow fadeInUp " data-wow-delay=".7s">
-                <div className="icon">
+            <div className={isScrolled?"contact-info-items wow fadeInUp active3":'contact-info-items wow fadeInUp non-active3'} data-wow-delay=".3s" >
+            <div className='icon'>
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd" d="M16 1.6665C11.036 1.6665 7 5.7385 7 10.7612C7 12.4625 7.74933 14.5732 8.84 16.6785C11.2413 21.3145 15.2413 25.9838 15.2413 25.9838C15.3352 26.0932 15.4516 26.1809 15.5826 26.2411C15.7135 26.3012 15.8559 26.3324 16 26.3324C16.1441 26.3324 16.2865 26.3012 16.4174 26.2411C16.5484 26.1809 16.6648 26.0932 16.7587 25.9838C16.7587 25.9838 20.7587 21.3145 23.16 16.6785C24.2507 14.5732 25 12.4625 25 10.7612C25 5.7385 20.964 1.6665 16 1.6665ZM16 6.99984C15.0447 7.0256 14.1371 7.42322 13.4705 8.10804C12.8039 8.79286 12.4309 9.71081 12.4309 10.6665C12.4309 11.6222 12.8039 12.5401 13.4705 13.225C14.1371 13.9098 15.0447 14.3074 16 14.3332C16.9553 14.3074 17.8629 13.9098 18.5295 13.225C19.1961 12.5401 19.5691 11.6222 19.5691 10.6665C19.5691 9.71081 19.1961 8.79286 18.5295 8.10804C17.8629 7.42322 16.9553 7.0256 16 6.99984Z" fill="#3C72FC"/>
                         <path fillRule="evenodd" clipRule="evenodd" d="M22.3788 23.1693C23.4628 23.4946 24.3562 23.8973 24.9735 24.3693C25.3735 24.6733 25.6668 24.9706 25.6668 25.3333C25.6668 25.5466 25.5455 25.74 25.3748 25.9333C25.0922 26.252 24.6722 26.5386 24.1522 26.8053C22.3148 27.7453 19.3442 28.3333 16.0002 28.3333C12.6562 28.3333 9.6855 27.7453 7.84816 26.8053C7.32816 26.5386 6.90816 26.252 6.6255 25.9333C6.45483 25.74 6.3335 25.5466 6.3335 25.3333C6.3335 24.9706 6.62683 24.6733 7.02683 24.3693C7.64416 23.8973 8.5375 23.4946 9.6215 23.1693C9.87557 23.0929 10.0889 22.9187 10.2146 22.6851C10.3402 22.4514 10.3679 22.1774 10.2915 21.9233C10.2151 21.6692 10.0409 21.4559 9.80726 21.3302C9.57359 21.2046 9.29957 21.1769 9.0455 21.2533C7.39483 21.7506 6.11216 22.432 5.3415 23.1853C4.66416 23.8453 4.3335 24.584 4.3335 25.3333C4.3335 26.2693 4.86283 27.2026 5.93883 27.9813C7.82683 29.3466 11.6188 30.3333 16.0002 30.3333C20.3815 30.3333 24.1735 29.3466 26.0615 27.9813C27.1375 27.2026 27.6668 26.2693 27.6668 25.3333C27.6668 24.584 27.3362 23.8453 26.6588 23.1853C25.8882 22.432 24.6055 21.7506 22.9548 21.2533C22.829 21.2155 22.697 21.2028 22.5663 21.216C22.4356 21.2292 22.3088 21.268 22.1931 21.3302C22.0774 21.3925 21.9751 21.4769 21.892 21.5786C21.8089 21.6804 21.7467 21.7975 21.7088 21.9233C21.671 22.0491 21.6583 22.1811 21.6715 22.3118C21.6847 22.4425 21.7236 22.5694 21.7858 22.6851C21.848 22.8008 21.9324 22.9031 22.0341 22.9862C22.1359 23.0692 22.253 23.1315 22.3788 23.1693Z" fill="#3C72FC"/>
@@ -60,7 +79,7 @@ const Footer = () => {
         </div>
         <div className="container">
             <div className="row">
-                <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp one active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp one'} data-wow-delay=".3s">
                     <div className="single-footer-widget">
                         <div className="widget-head">
                             <Link href="index.html">
@@ -82,7 +101,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
+
+                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp two active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp two'} data-wow-delay=".5s">
                     <div className="single-footer-widget">
                         <div className="widget-head">
                             <h3>Quick Links</h3>
@@ -127,7 +147,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
+
+                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp three active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp three'} data-wow-delay=".5s">
                     <div className="single-footer-widget style-margin">
                         <div className="widget-head">
                             <h3>Our Service</h3>
@@ -168,7 +189,8 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+
+                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp four active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp four'} data-wow-delay=".7s">
                             <div className="single-footer-widget style-margin">
                                 <div className="widget-head">
                                     <h3>Newsletter</h3>
@@ -194,10 +216,10 @@ const Footer = () => {
     <div className="footer-bottom style-2">
         <div className="container">
             <div className="footer-wrapper d-flex align-items-center justify-content-between">
-                <p className="wow fadeInLeft color-2" data-wow-delay=".3s">
+                <p className={isScrolled?"wow fadeInLeft color-2 index1 active":'wow fadeInLeft color-2 index1'} data-wow-delay=".3s">
                     © All Copyright 2024 by <Link href="index.html">Infotech</Link>
                 </p>
-                <ul className="footer-menu wow fadeInRight" data-wow-delay=".5s">
+                <ul className={isScrolled?"footer-menu wow fadeInRight index2 active":'footer-menu wow fadeInRight index2'} data-wow-delay=".5s">
                     <li>
                         <Link href="contact.html">
                             Terms & Condition

@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/Layout";
-import Home from "./Components/pages/Home";
+import Home from "./Components/pages/Home/Home";
 import About from "./Components/pages/About";
 import Contact from "./Components/pages/Contact";
 import Blog from "./Components/pages/Blog";
@@ -9,8 +9,9 @@ import BlogDetails from "./Components/pages/BlogDetails";
 import Service from "./Components/pages/Service/Service";
 import ServiceDetails from "./Components/pages/ServiceDetails";
 import Layout2 from "./Components/Layout2";
-import HappyClient from "./Components/pages/HappyClient";
+import HappyClient from "./Components/pages/Happyclient/HappyClient";
 import ClientTestimonial from "./Components/pages/ClientTestimonial";
+import Teamspage from "./Components/pages/Teams/Teamspage";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
             <Route path="servicedetails" element={<ServiceDetails />} />
             <Route path="happyclient" element={<HappyClient />} />
             <Route path="clienttestimonial" element={<ClientTestimonial />} />
+            <Route path="ourexperts" element={<Teamspage/>} />
           </Route>
         </Routes>
       </BrowserRouter>

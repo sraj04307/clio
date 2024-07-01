@@ -4,7 +4,7 @@ import About2 from '../Component/About/About2/About2'
 import Service2 from '../Component/Service/Service2/Service2'
 import Teams from '../Component/Teams/Teams'
 import Brand from '../Component/Brand/Brand'
-import Project from '../Component/Others/Project'
+import Footer from '../Component/Footer/Footer'
 
 const About = () => {
   return (
@@ -12,9 +12,9 @@ const About = () => {
       <Banner2 message={"About Us"}/>
       <About2/>
       <Service2/>
-      <Project/>
       <Teams/>
       <Brand/>
+      <Footer scrollpos={1700}/>
     </>
   )
 }

@@ -1,6 +1,28 @@
-import React from 'react'
+import React, {useEffect,useState} from 'react'
+import './Service2.css'
 
 const Service2 = () => {
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 1000) { 
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
+
+
   return (
     <section className="offer-section fix section-bg-2 section-padding">
             <div className="line-shape">
@@ -11,14 +33,14 @@ const Service2 = () => {
             </div>
             <div className="container">
                 <div className="section-title text-center">
-                    <span className="wow fadeInUp">Our offering</span>
-                    <h2 className="text-white wow fadeInUp" data-wow-delay=".3s">
+                    <span className={isScrolled?"wow fadeInUp active":'wow fadeInUp '}>Our offering</span>
+                    <h2 className={isScrolled?"wow fadeInUp active":'wow fadeInUp '} data-wow-delay=".3s">
                         Enhance and Pioneer Using <br/> Technology Trends
                     </h2>
                 </div>
                 <div className="row">
                     <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div className="offer-items">
+                        <div className={isScrolled?"offer-items active1":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
                             </div>
@@ -43,7 +65,7 @@ const Service2 = () => {
                         </div>
                     </div>
                     <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div className="offer-items">
+                    <div className={isScrolled?"offer-items active2":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
                             </div>
@@ -62,7 +84,7 @@ const Service2 = () => {
                         </div>
                     </div>
                     <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div className="offer-items active">
+                    <div className={isScrolled?"offer-items active3 active":'offer-items active'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
                             </div>
@@ -89,7 +111,7 @@ const Service2 = () => {
                         </div>
                     </div>
                     <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div className="offer-items">
+                    <div className={isScrolled?"offer-items active4":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
                             </div>
@@ -112,7 +134,7 @@ const Service2 = () => {
                         </div>
                     </div>
                     <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".9s">
-                        <div className="offer-items">
+                    <div className={isScrolled?"offer-items active5":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
                             </div>
@@ -140,7 +162,7 @@ const Service2 = () => {
                         </div>
                     </div>
                     <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".9s">
-                        <div className="offer-items">
+                    <div className={isScrolled?"offer-items active6":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
                             </div>

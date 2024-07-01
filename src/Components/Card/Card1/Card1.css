@@ -1,4 +1,4 @@
-.card3 .single-team-items{
+.news-card-items{
     box-shadow: 0px 0px 4px rgb(198, 198, 198);
     transform: rotateX(-90deg);
     transform-origin: top;
@@ -13,36 +13,36 @@
 .id2.active{
     transform: rotateX(0deg);
     transform-origin: top;
-    transition: all 0.5s ease-in-out 0.3s;
+    transition: all 0.5s ease-in-out 0.6s;
 }
 .id3.active{
     transform: rotateX(0deg);
     transform-origin: top;
-    transition: all 0.5s ease-in-out .6s;
+    transition: all 0.5s ease-in-out 1.2s;
 }
 
 .id4.active{
     transform: rotateX(0deg);
     transform-origin: top;
-    transition: all 0.5s ease-in-out .9s;
+    transition: all 0.5s ease-in-out 1.8s;
 }
 .id5.active{
     transform: rotateX(0deg);
     transform-origin: top;
-    transition: all 0.5s ease-in-out 1.2s;
+    transition: all 0.5s ease-in-out 2.4s;
 }
 .id6.active{
     transform: rotateX(0deg);
     transform-origin: top;
-    transition: all 0.5s ease-in-out 1.5s;
+    transition: all 0.5s ease-in-out 3.0s;
 }
 .id7.active{
     transform: rotateX(0deg);
     transform-origin: top;
-    transition: all 0.5s ease-in-out 1.8s;
+    transition: all 0.5s ease-in-out 3.6s;
 }
 .id8.active{
     transform: rotateX(0deg);
     transform-origin: top;
-    transition: all 0.5s ease-in-out 2.1s;
+    transition: all 0.5s ease-in-out 4.2s;
 }

@@ -25,6 +25,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import './Brand.css'
 
 const Brand = () => {
     return (
@@ -38,11 +39,11 @@ const Brand = () => {
                             <Swiper
                                 modules={[Navigation, A11y, Autoplay]}
                                 spaceBetween={50}
-                                loop={true} // Enable loop
+                                loop={true}
                                 autoplay={{
-                                    delay: 300, // Delay between transitions (in ms)
-                                    disableOnInteraction: false, // Continue autoplay even when user interacts with swiper
-                                    waitForTransition: true // Ensure no delays between slides
+                                    delay: 1000, 
+                                    disableOnInteraction: false,
+                                    waitForTransition: true 
                                 }}
 
                                 breakpoints={{

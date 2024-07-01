@@ -5,52 +5,6 @@ import './Header.css'
 const Header = () => {
     return (
         <header>
-            {/* <div className="header-top-section top-style-3">
-                <div className="container">
-                    <div className="header-top-wrapper">
-                        <ul className="contact-list">
-                            <li>
-                                <i className="far fa-envelope"></i>
-                                <Link to="mailto:info@example.com" className="link">info@example.com</Link>
-                            </li>
-                            <li>
-                                <i className="fa-solid fa-phone-volume"></i>
-                                <Link to="tel:2086660112">+208-666-0112</Link>
-                            </li>
-                        </ul>
-                        <div className="top-right">
-                            <div className="flag-wrap">
-                                <div className="flag">
-                                    <img src="assets/img/flag.png" alt="flag" />
-                                </div>
-                                <div className="nice-select" tabindex="0">
-                                    <span className="current">
-                                        English
-                                    </span>
-                                    <ul className="list">
-                                        <li data-value="1" className="option selected focus">
-                                            English
-                                        </li>
-                                        <li data-value="1" className="option">
-                                            Bangla
-                                        </li>
-                                        <li data-value="1" className="option">
-                                            Hindi
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="social-icon d-flex align-items-center">
-                                <span>Follow Us:</span>
-                                <Link to="#"><i className="fab fa-facebook-f"></i></Link>
-                                <Link to="#"><i className="fab fa-twitter"></i></Link>
-                                <Link to="#"><i className="fa-brands fa-linkedin-in"></i></Link>
-                                <Link to="#"><i className="fa-brands fa-youtube"></i></Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div id="header-sticky" className="header-3">
                 <div className="plane-shape">
                     <img src="assets/img/plane.png" alt="shape-img" />
@@ -61,7 +15,7 @@ const Header = () => {
                             <div className="header-left">
                                 <div className="logo">
                                     <Link to="/" className="header-logo">
-                                        <img src="assets/img/logo/black-logo.svg" alt="logo-img" />
+                                        <img src="assets/img/logo/black-logo.svg" className='logo' alt="logo-img" />
                                     </Link>
                                 </div>
                             </div>
@@ -83,11 +37,10 @@ const Header = () => {
                                                     </NavLink>
                                                     <ul className="submenu">
                                                         <li><Link to="about">About Us</Link></li>
-                                                        <li><Link to="/">Our Journey</Link></li>
                                                         <li><Link to="blog">Blog</Link></li>
                                                         <li><Link to="happyclient">Our Happy Client</Link></li>
                                                         <li><Link to="clienttestimonial">Client Testimonial</Link></li>
-                                                        <li><Link to="/">Our Experts</Link></li>
+                                                        <li><Link to="ourexperts">Our Experts</Link></li>
                                                     </ul>
                                                 </li>
 

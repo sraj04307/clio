@@ -1,95 +1,100 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Banner2 from '../../Component/Banner/Banner2/Banner2'
 import Card2 from '../../Card/Card2/Card2'
 import './Service.css'
+import Footer from '../../Component/Footer/Footer'
 
 const Service = () => {
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 100) { 
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
     return (
         <>
             <Banner2 message={"Services"} />
             <section className="service-section fix section-padding">
                 <div className="container">
                     <div className="section-title text-center">
-                        <span className="wow fadeInUp">OUR SERVICES</span>
-                        <h2 className="wow fadeInUp" data-wow-delay=".3s">
+                        <span className={isScrolled ? "wow fadeInUp ourservice active" : 'wow fadeInUp ourservice'}>OUR SERVICES</span>
+                        <h2 className={isScrolled ? "wow fadeInUp ourservice2 active" : 'wow fadeInUp ourservice'}>
                             We Provide the Best Quality
                         </h2>
                     </div>
                     <div className="service-wrapper mb-0">
                         <div className="row mb-5 pb-5">
-                            <h3>Graphic Designing</h3>
-                            <Card2 title={"Website Designing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                    
+                            <Card2 title={"Website Designing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id1"}/>
 
-                            <Card2 title={"Logo Designing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Logo Designing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id2"}/>
 
-                            <Card2 title={"Product Designing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Product Designing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id3"}/>
 
-                            <Card2 title={"Social Media Creative Designing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Social Media Creative Designing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id4"}/>
 
+                            <Card2 title={"Static Website Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."}id={"id5"} />
 
-                        </div>
+                            <Card2 title={"CMS Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id6"}/>
 
-                        <div className="row mb-5 pb-5">
-                            <h3>Web Develpment</h3>
-                            <Card2 title={"Static Website Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Wordpress Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id7"}/>
 
-                            <Card2 title={"CMS Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"PHP Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id8"}/>
 
-                            <Card2 title={"Wordpress Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"CodeIgnitor Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id9"}/>
 
-                            <Card2 title={"PHP Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"CakePHP Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id10"}/>
 
-                            <Card2 title={"CodeIgnitor Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Laravel Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id11"} />
 
-                            <Card2 title={"CakePHP Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Angular Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id12"}/>
 
-                            <Card2 title={"Laravel Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Wix Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id13"}/>
 
-                            <Card2 title={"Angular Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"WooCommerce Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id14"}/>
 
-                            <Card2 title={"Wix Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Magento Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id15"}/>
 
+                            <Card2 title={"Shopify Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id16"}/>
 
-                        </div>
-                        <div className="row mb-5 pb-5">
-                            <h3>Ecommerce Solution</h3>
-                            <Card2 title={"WooCommerce Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"OpenCart Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id17"}/>
 
-                            <Card2 title={"Magento Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Custom Ecommerce Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id18"}/>
+                        
+                            <Card2 title={"Search Engine Optimization"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id19"}/>
 
-                            <Card2 title={"Shopify Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Social Media Optimization"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id20"}/>
 
-                            <Card2 title={"OpenCart Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Social Media Marketing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id21"}/>
 
-                            <Card2 title={"Custom Ecommerce Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
-                        </div>
-                        <div className="row mb-5 pb-5">
-                            <h3>Digital Marketing</h3>
-                            <Card2 title={"Search Engine Optimization"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Google Ad Campagin"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id22"}/>
+                       
+                            <Card2 title={"Android App Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id23"}/>
 
-                            <Card2 title={"Social Media Optimization"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"IOS App Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id24"}/>
 
-                            <Card2 title={"Social Media Marketing"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Hybrid App Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id25"}/>
 
-                            <Card2 title={"Google Ad Campagin"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
-                        </div>
-                        <div className="row mb-5 pb-5">
-                            <h3>App Development</h3>
-                            <Card2 title={"Android App Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Native App Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id26"}/>
+                        
+                            <Card2 title={"GPS Tracking Solution"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id27"}/>
 
-                            <Card2 title={"IOS App Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"Web Accesseblity"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id28"}/>
 
-                            <Card2 title={"Hybrid App Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
-
-                            <Card2 title={"Native App Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
-                        </div>
-                        <div className="row mb-5 pb-5">
-                            <h3>Other Services</h3>
-                            <Card2 title={"GPS Tracking Solution"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
-
-                            <Card2 title={"Web Accesseblity"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
-
-                            <Card2 title={"IOT Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} />
+                            <Card2 title={"IOT Development"} image={"img"} desc={"accumsan. Pellentesque in magna tincidunt, this is."} id={"id29"}/>
                         </div>
                     </div>
                 </div>
@@ -227,6 +232,8 @@ const Service = () => {
                     </div>
                 </div>
             </section>
+
+            <Footer/>
         </>
     )
 }

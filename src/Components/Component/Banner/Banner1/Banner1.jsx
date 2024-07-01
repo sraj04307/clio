@@ -9,20 +9,20 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const Banner = () => {
+
+    
+
     return (
         <section className="hero-section fix hero-3">
             <div className="bottom-shape">
                 <img src="assets/img/hero/bottom-shape.png" alt="shape-img" />
             </div>
-            {/* <div className="array-button">
-                <button className="array-prev"><i className="fal fa-arrow-right"></i></button>
-                <button className="array-next"><i className="fal fa-arrow-left"></i></button>
-            </div> */}
 
             <Swiper
                   modules={[Navigation, A11y, Autoplay]}
                   spaceBetween={50}
                   slidesPerView={1}
+                  navigation
                   loop={true} // Enable loop
                   autoplay={{
                       delay: 3000, // Delay between transitions (in ms)

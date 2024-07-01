@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './Testi.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y, Pagination, Autoplay } from 'swiper/modules';
@@ -10,7 +10,23 @@ import 'swiper/css/scrollbar';
 
 const Testi = () => {
 
+    const [isScrolled, setIsScrolled] = useState(false);
 
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 2700) { 
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
 
     return (
         <section className="tesimonial-section-3 section-padding section-bg-2 bg-cover">
@@ -26,13 +42,16 @@ const Testi = () => {
             </div> */}
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6">
-                        <div className="section-title text-center">
-                            <span className="text-white">Testimonials</span>
-                            <h2 className="text-white">
+                    <div className="col-12 text-center">
+                    <span className={isScrolled?"text-white span-active":'text-white span-nonactive'}>Testimonials</span>
+                    <h2 className={isScrolled?"text-white h2-active":'text-white h2-nonactive'}>
                                 People Who Already Love Us
                             </h2>
-                            <div className="swiper testimonial-slider-2">
+                    </div>
+                    <div className="col-md-6">
+                        <div className="section-title text-center">
+                           
+                            <div className={isScrolled?"swiper testimonial-slider-2 left active":'swiper testimonial-slider-2 left'}>
                                 <div className="swiper-wrapper">
 
                                     <Swiper
@@ -41,9 +60,9 @@ const Testi = () => {
                                        loop={true} // Enable loop
                                        pagination
                                        autoplay={{
-                                           delay: 1000, // Delay between transitions (in ms)
-                                           disableOnInteraction: false, // Continue autoplay even when user interacts with swiper
-                                           waitForTransition: true // Ensure no delays between slides
+                                           delay: 3000,
+                                           disableOnInteraction: false,
+                                           waitForTransition: true 
                                        }}
 
                                         breakpoints={{
@@ -180,10 +199,92 @@ const Testi = () => {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <video width="100%" height="100%" className='border' controls>
-                            <source src="assets/videos/mov.mp4" />
+                        
+                    <div className="section-title text-center">
+                           
+                           <div className={isScrolled?"swiper testimonial-slider-2 right active":'swiper testimonial-slider-2 right'}>
+                               <div className="swiper-wrapper">
+
+                                   <Swiper
+                                      modules={[Navigation, A11y, Autoplay, Pagination]}
+                                      spaceBetween={50}
+                                      loop={true} // Enable loop
+                                      pagination
+                                      autoplay={{
+                                          delay: 4000,
+                                          disableOnInteraction: false,
+                                          waitForTransition: true 
+                                      }}
+
+                                       breakpoints={{
+                                           // when window width is >= 576px
+                                           576: {
+                                               slidesPerView: 1,
+                                               spaceBetween: 20
+                                           },
+                                           // when window width is >= 768px
+                                           768: {
+                                               slidesPerView: 1,
+                                               spaceBetween: 30
+                                           },
+                                           // when window width is >= 992px
+                                           992: {
+                                               slidesPerView: 1,
+                                               spaceBetween: 40
+                                           }
+                                       }}
+                                   >
+                                           <SwiperSlide>
+                                           <div className="swiper-slide">
+                                               <div className="testimonial-box-video">
+                                               <video width="100%" height="100%" controls>
+                            <source src="https://videos.pexels.com/video-files/5342194/5342194-hd_1920_1080_30fps.mp4" />
                             Your browser does not support the video tag.
                         </video>
+                                               </div>
+                                           </div>
+                                       </SwiperSlide>
+
+                                       <SwiperSlide>
+                                           <div className="swiper-slide">
+                                               <div className="testimonial-box-video">
+                                               <video width="100%" height="100%" controls>
+                            <source src="https://videos.pexels.com/video-files/5342194/5342194-hd_1920_1080_30fps.mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                                               </div>
+                                           </div>
+                                       </SwiperSlide>
+
+                                       <SwiperSlide>
+                                           <div className="swiper-slide">
+                                               <div className="testimonial-box-video">
+                                               <video width="100%" height="100%" controls>
+                            <source src="https://videos.pexels.com/video-files/5342194/5342194-hd_1920_1080_30fps.mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                                               </div>
+                                           </div>
+                                       </SwiperSlide>
+
+                                       <SwiperSlide>
+                                           <div className="swiper-slide">
+                                               <div className="testimonial-box-video">
+                                               <video width="100%" height="100%" controls>
+                            <source src="https://videos.pexels.com/video-files/5342194/5342194-hd_1920_1080_30fps.mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                                               </div>
+                                           </div>
+                                       </SwiperSlide>
+                                   </Swiper>
+
+
+                               </div>
+                           </div>
+                       </div>
+
+                        
 
                     </div>
                 </div>

@@ -39,3 +39,30 @@
 .theme-btn.border-white{
     padding: 15px 20px;
 }
+
+/* Define keyframes animation */
+@keyframes bannanim1 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* Apply animation to h5 within .hero-section when .swiper-slide-active */
+
+.hero-section .swiper-slide-active h5 {
+    animation: bannanim1 0.8s ease-in-out ;
+}
+.hero-section .swiper-slide-active h1 {
+    animation: bannanim1 1.2s ease-in-out ;
+}
+.hero-section .swiper-slide-active p {
+    animation: bannanim1 1s ease-in-out ;
+}
+.hero-section .swiper-slide-active a {
+    animation: bannanim1 1s ease-in-out ;
+}

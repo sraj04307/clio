@@ -31,3 +31,107 @@
 .contact-info-area .contact-info-items{
     align-items: flex-start !important;
 }
+
+.contact-info-area{
+    padding-top: 50px;
+}
+
+.footer-widgets-wrapper{
+    padding: 50px 0;
+}
+
+
+.footer-section .non-active1{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.footer-section .active1{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+
+.footer-section .non-active2{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.footer-section .active2{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 0.5s ease-in-out .8s;
+}
+
+.footer-section .non-active3{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.footer-section .active3{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: all 0.5s ease-in-out 1.1s;
+}
+
+
+
+
+.footer-section .one{
+    opacity: 0;
+    transition: all 0.5s ease-in-out 1.2s;
+}
+.footer-section .one.active{
+    opacity: 1;
+    transition: all 0.5s ease-in-out 1.2s;
+}
+
+.footer-section .two{
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.footer-section .two.active{
+    opacity: 1;
+    transition: all 0.5s ease-in-out 1.4s;
+}
+
+.footer-section .three{
+    opacity: 0;
+    transition: all 0.5s ease-in-out ;
+}
+.footer-section .three.active{
+    opacity: 1;
+    transition: all 0.5s ease-in-out 1.6s;
+}
+
+.footer-section .four{
+    opacity: 0;
+    transition: all 0.5s ease-in-out ;
+}
+.footer-section .four.active{
+    opacity: 1;
+    transition: all 0.5s ease-in-out 1.8s;
+}
+
+
+.footer-section .index1{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out ;
+}
+.footer-section .index1.active{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.5s ease-in-out 2s;
+}
+
+.footer-section .index2{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out ;
+}
+.footer-section .index2.active{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.5s ease-in-out 2s;
+}

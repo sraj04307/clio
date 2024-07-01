@@ -1,0 +1,109 @@
+
+.brand2-card{
+    box-shadow: 0px 0px 4px rgb(198, 198, 198);
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out;
+}
+
+.id1.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out;
+}
+.id2.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 0.3s;
+}
+.id3.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 0.6s;
+}
+
+.id4.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 0.9s;
+}
+.id5.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 1.2s;
+}
+.id6.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 1.5s;
+}
+.id7.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 1.8s;
+}
+.id8.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 2.1s;
+}
+.id9.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 2.4s;
+}
+.id10.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 2.7s;
+}
+.id11.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 3.0s;
+}
+.id12.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 3.3s;
+}
+.id13.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 3.6s;
+}
+.id14.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 3.9s;
+}
+.id15.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 4.2s;
+}
+.id16.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 4.5s;
+}
+.id17.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 4.8s;
+}
+.id18.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 5.1s;
+}
+.id19.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 5.4s;
+}
+.id20.active{
+    transform: rotateX(0deg);
+    transform-origin: top;
+    transition: all 0.5s ease-in-out 5.7s;
+}

@@ -1,10 +1,30 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import './Card2.css'
 
 const Card2 = (props) => {
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 200) { 
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
   return (
-    <div className="col-xl-3 col-lg-4 col-md-6">
-    <div className="service-card-items">
+    <div className="col-xl-3 col-lg-4 col-md-6 ">
+    <div className={isScrolled ? `service-card-items active ${props.id}`:'service-card-items'}>
         <div className="service-image">
             <img src="assets/img/service/06.jpg" alt="service-img"/>
         </div>

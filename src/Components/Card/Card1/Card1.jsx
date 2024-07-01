@@ -1,10 +1,32 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import './Card1.css'
 
-const Card1 = () => {
+const Card1 = ({id}) => {
+
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 200) { 
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+
     return (
         <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-            <div className="news-card-items style-2 mt-0 pb-0">
+            <div className={isScrolled?`news-card-items style-2 mt-0 pb-0 active ${id}`:"news-card-items style-2 mt-0 pb-0"}>
                 <div className="news-image">
                     <img src="assets/img/news/blog.jpg" alt="news-img" />
                     <div className="post-date">
