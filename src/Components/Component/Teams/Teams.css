@@ -62,13 +62,17 @@
 }
 .team-section-3 .card3.active{
     z-index: 2;
-    transform: translateX(0%);
+    transform: translateX(0);
     opacity: 1;
     transition: transform 0.9s ease-in-out 1s;
 }
 .team-section-3 .card4.active{
     z-index: 1;
-    transform: translateX(0%);
+    transform: translateX(0);
     opacity: 1;
     transition: transform 1.2s ease-in-out 1s;
+}
+
+.team-section-3 .card3 .single-team-items{
+    transform: translateX(0);
 }

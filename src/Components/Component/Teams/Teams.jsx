@@ -7,7 +7,7 @@ import img4 from '../../../assets/img/teams/Person 4.jpg'
 import './Teams.css'
 
 
-const Teams = () => {
+const Teams = ({props}) => {
 
 
     const [isScrolled, setIsScrolled] = useState(false);
