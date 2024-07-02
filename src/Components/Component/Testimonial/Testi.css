@@ -25,7 +25,7 @@
 .tesimonial-section-3 .span-active{
     transform: translateX(0%);
     opacity: 1;
-    transition: all 0.4s ease-in-out 0.3s;
+    transition: all 0.4s ease-in-out ;
 }
 .tesimonial-section-3 .h2-nonactive{
     transform: translateX(-100%);
@@ -35,7 +35,7 @@
 .tesimonial-section-3 .h2-active{
     transform: translateX(0%);
     opacity: 1;
-    transition: all 0.8s ease-in-out 0.5s;
+    transition: all 0.4s ease-in-out 0.3s;
 }
 
 
@@ -49,18 +49,18 @@
 .tesimonial-section-3 .left.active {
     transform: translateX(0%);
     opacity: 1;
-    transition: all 0.8s ease-in-out .8s;
+    transition: all 0.4s ease-in-out .6s;
 }
 
 
 .tesimonial-section-3 .right{
     transform: translateX(100%);
     opacity: 0;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .tesimonial-section-3 .right.active{
     transform: translateX(0%);
     opacity: 1;
-    transition: all 0.8s ease-in-out .8s;
+    transition: all 0.4s ease-in-out .6s;
 }
 

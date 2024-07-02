@@ -44,7 +44,7 @@
 
 .about-section .myfadein-left.active{
     transform: translateX(0%);
-    transition: all 0.8s ease-in-out 0.3s;
+    transition: all 0.4s ease-in-out 0.1s;
     opacity: 1;
 }
 
@@ -56,7 +56,7 @@
 
 .about-section .myfadein-right.active{
     transform: translateX(0%);
-    transition: all 0.8s ease-in-out 0.3s;
+    transition: all 0.4s ease-in-out 0.2s;
     opacity: 1;
 }
 

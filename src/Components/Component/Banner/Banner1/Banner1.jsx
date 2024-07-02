@@ -25,7 +25,7 @@ const Banner = () => {
                   navigation
                   loop={true} // Enable loop
                   autoplay={{
-                      delay: 3000, // Delay between transitions (in ms)
+                      delay: 8000, // Delay between transitions (in ms)
                       disableOnInteraction: false, // Continue autoplay even when user interacts with swiper
                       waitForTransition: true // Ensure no delays between slides
                   }}
@@ -36,7 +36,7 @@ const Banner = () => {
                                 <img src="assets/img/hero/mask-shape-2.png" alt="shape-img" />
                             </div>
                             <div className="border-shape" data-animation="slideInRight" data-duration="3s" data-delay="2.2s">
-                                <img src="assets/img/hero/border-shape.png" alt="shape-img" />
+                                {/* <img src="assets/img/hero/border-shape.png" alt="shape-img" /> */}
                             </div>
                             <div className="circle-shape" data-animation="slideInRight" data-duration="3s" data-delay="2.1s">
                                 <img src="assets/img/choose/circle.png" alt="shape-img" />
@@ -79,7 +79,7 @@ const Banner = () => {
                                 <img src="assets/img/hero/mask-shape-2.png" alt="shape-img" />
                             </div>
                             <div className="border-shape" data-animation="slideInRight" data-duration="3s" data-delay="2.2s">
-                                <img src="assets/img/hero/border-shape.png" alt="shape-img" />
+                                {/* <img src="assets/img/hero/border-shape.png" alt="shape-img" /> */}
                             </div>
                             <div className="circle-shape" data-animation="slideInRight" data-duration="3s" data-delay="2.1s">
                                 <img src="assets/img/choose/circle.png" alt="shape-img" />
@@ -122,7 +122,7 @@ const Banner = () => {
                                 <img src="assets/img/hero/mask-shape-2.png" alt="shape-img" />
                             </div>
                             <div className="border-shape" data-animation="slideInRight" data-duration="3s" data-delay="2.2s">
-                                <img src="assets/img/hero/border-shape.png" alt="shape-img" />
+                                {/* <img src="assets/img/hero/border-shape.png" alt="shape-img" /> */}
                             </div>
                             <div className="circle-shape" data-animation="slideInRight" data-duration="3s" data-delay="2.1s">
                                 <img src="assets/img/choose/circle.png" alt="shape-img" />

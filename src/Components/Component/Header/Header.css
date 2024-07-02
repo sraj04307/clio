@@ -64,6 +64,8 @@ header nav i{
 /* Apply animation to .logo within header */
 header .logo {
     animation: headanim1 0.8s ease-in-out;
+    width: 200px;
+    padding: 6px 0;
 }
 
 header .header-main .main-menu ul li a{

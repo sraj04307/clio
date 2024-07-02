@@ -4,11 +4,17 @@
     }
 }
 
+.footer-widgets-wrapper{
+    padding-bottom: 50px !important;
+    padding-top: 0px !important;
+}
+
 .footer-widgets-wrapper .single-footer-widget .footer-content .social-icon a{
     border-radius: 50%;
     border: 2px dashed rgba(227, 227, 227, 0.2);
     line-height: 31px;
     transition: all 0.3s ease-in-out;
+    
     
 
 }

@@ -1,6 +1,7 @@
 import React, {useEffect,useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Footer.css'
+// import img from '../../../assets/img/logo/img1.jpg'
 
 const Footer = () => {
 

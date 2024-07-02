@@ -3,23 +3,23 @@
 }
 .work-process-section .section-title span{
     transform: translateX(-100%);
-    transition: all 0.8s ease-in-out;
+    transition: all 0.4s ease-in-out;
     opacity: 0;
 }
 .work-process-section .section-title span.active{
     transform: translateX(0);
-    transition: all 1s ease-in-out 0.5s;
+    transition: all .4s ease-in-out ;
     opacity: 1;
 }
 
 .work-process-section .section-title h2{
     transform: translateX(-100%);
-    transition: all 0.8s ease-in-out ;
+    transition: all 0.4s ease-in-out ;
     opacity: 0;
 }
 .work-process-section .section-title h2.active{
     transform: translateX(0);
-    transition: all 1s ease-in-out 0.8s;
+    transition: all 0.4s ease-in-out 0.3s;
     opacity: 1;
 }
 
@@ -56,7 +56,7 @@
 .work-process-section .work-process-items1.active{
     transform: translateY(0%);
     opacity: 1;
-    transition: all 1s ease-in-out 2s;
+    transition: all .4s ease-in-out .3s;
 }
 
 .work-process-section .work-process-items2{
@@ -67,7 +67,7 @@
 .work-process-section .work-process-items2.active{
     transform: translateY(0%);
     opacity: 1;
-    transition: all 1s ease-in-out 2.2s;
+    transition: all .4s ease-in-out .6s;
 }
 
 
@@ -79,7 +79,7 @@
 .work-process-section .work-process-items3.active{
     transform: translateY(0%);
     opacity: 1;
-    transition: all 1s ease-in-out 2.4s;
+    transition: all .4s ease-in-out .9s;
 }
 
 
@@ -91,5 +91,5 @@
 .work-process-section .work-process-items4.active{
     transform: translateY(0%);
     opacity: 1;
-    transition: all 1s ease-in-out 2.6s;
+    transition: all .4s ease-in-out 1.2s;
 }

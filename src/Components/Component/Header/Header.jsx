@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
+import img from '../../../assets/img/logo/img1.jpg'
 
 const Header = () => {
     return (
@@ -15,7 +16,7 @@ const Header = () => {
                             <div className="header-left">
                                 <div className="logo">
                                     <Link to="/" className="header-logo">
-                                        <img src="assets/img/logo/black-logo.svg" className='logo' alt="logo-img" />
+                                        <img src={img} className='logo' alt="logo-img" />
                                     </Link>
                                 </div>
                             </div>
