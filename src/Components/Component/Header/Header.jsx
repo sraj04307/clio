@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
-import img from '../../../assets/img/logo/img1.jpg'
+import img from '../../../assets/img/logo/img1.png'
 
 const Header = () => {
     return (
@@ -52,46 +52,46 @@ const Header = () => {
                                                     </NavLink>
                                                     <ul className="submenu">
                                                         <li className="has-dropdown">
-                                                            <Link to="/">
+                                                            <Link >
                                                                 Graphics Designing
                                                                 <i className="fas fa-angle-down"></i>
                                                             </Link>
                                                             <ul className="submenu">
-                                                                <li><Link to="#">Website Designing</Link></li>
-                                                                <li><Link to="#">Logo Designing</Link></li>
-                                                                <li><Link to="#">Product Designing</Link></li>
-                                                                <li><Link to="#">Social Media Creative Designing</Link></li>
+                                                                <li><Link to="websitedesign">Website Designing</Link></li>
+                                                                <li><Link to="logodesign">Logo Designing</Link></li>
+                                                                <li><Link to="productdesign">Product Designing</Link></li>
+                                                                <li><Link to="socialmediacreativedesign">Social Media Creative Designing</Link></li>
 
                                                             </ul>
                                                         </li>
                                                         <li className="has-dropdown">
-                                                            <Link to="team.html">
+                                                            <Link>
                                                                 Web Development
                                                                 <i className="fas fa-angle-down"></i>
                                                             </Link>
                                                             <ul className="submenu">
-                                                                <li><Link href="#">Static Website Development</Link></li>
-                                                                <li><Link href="#">CMS Development</Link></li>
-                                                                <li><Link href="#">WordPress Development</Link></li>
-                                                                <li><Link href="#">PHP Development</Link></li>
-                                                                <li><Link href="#">CodeIgniter Development</Link></li>
-                                                                <li><Link href="#">CakePHP Development</Link></li>
-                                                                <li><Link href="#">Laravel Development</Link></li>
-                                                                <li><Link href="#">Angular JS Development</Link></li>
-                                                                <li><Link href="#">WIX Development</Link></li>
+                                                                <li><Link to="staticebsitedevelopment">Static Website Development</Link></li>
+                                                                <li><Link to="cmsdevelopment">CMS Development</Link></li>
+                                                                <li><Link to="wordpressdevelopment">WordPress Development</Link></li>
+                                                                <li><Link to="phpdevelopment">PHP Development</Link></li>
+                                                                <li><Link to="codeignitorevelopment">CodeIgniter Development</Link></li>
+                                                                <li><Link to="cakephpdevelopment">CakePHP Development</Link></li>
+                                                                <li><Link to="laraveldevelopment">Laravel Development</Link></li>
+                                                                <li><Link to="angularjsdevelopment">Angular JS Development</Link></li>
+                                                                <li><Link to="wixdevelopment">WIX Development</Link></li>
                                                             </ul>
                                                         </li>
                                                         <li className="has-dropdown">
-                                                            <Link to="team.html">
+                                                            <Link>
                                                                 E-commerce Solution
                                                                 <i className="fas fa-angle-down"></i>
                                                             </Link>
                                                             <ul className="submenu">
-                                                                <li><Link href="#">WooCommerce Development</Link></li>
-                                                                <li><Link href="#">Magento Development</Link></li>
-                                                                <li><Link href="#">Shopify Development</Link></li>
-                                                                <li><Link href="#">OpenCart Development</Link></li>
-                                                                <li><Link href="#">Custom E-commerce Development</Link></li>
+                                                                <li><Link to="wocommercedevelopment">WooCommerce Development</Link></li>
+                                                                <li><Link to="magentodevelopment">Magento Development</Link></li>
+                                                                <li><Link to="shopifydevelopment">Shopify Development</Link></li>
+                                                                <li><Link to="opencartdevelopment">OpenCart Development</Link></li>
+                                                                <li><Link to="customecommercedevelopment">Custom E-commerce Development</Link></li>
                                                             </ul>
                                                         </li>
                                                         <li className="has-dropdown">
@@ -100,40 +100,40 @@ const Header = () => {
                                                                 <i className="fas fa-angle-down"></i>
                                                             </Link>
                                                             <ul className="submenu">
-                                                                <li><Link href="#">Search Engine Optimization (SEO)</Link></li>
-                                                                <li><Link href="#">Social Media Optimization (SMO)</Link></li>
-                                                                <li><Link href="#">Social Media Marketing (SMM)</Link></li>
-                                                                <li><Link href="#">Google Ad Campaign</Link></li>
+                                                                <li><Link to="seo">Search Engine Optimization (SEO)</Link></li>
+                                                                <li><Link to="smo">Social Media Optimization (SMO)</Link></li>
+                                                                <li><Link to="smm">Social Media Marketing (SMM)</Link></li>
+                                                                <li><Link to="googlead">Google Ad Campaign</Link></li>
                                                             </ul>
                                                         </li>
                                                         <li className="has-dropdown">
-                                                            <Link to="team.html">
+                                                            <Link>
                                                                 App Development
                                                                 <i className="fas fa-angle-down"></i>
                                                             </Link>
                                                             <ul className="submenu">
-                                                                <li><Link href="#">Android App Development</Link></li>
-                                                                <li><Link href="#">iOS App Development</Link></li>
-                                                                <li><Link href="#">Hybrid App Development</Link></li>
-                                                                <li><Link href="#">Native App Development</Link></li>
+                                                                <li><Link to="androiddevelopment">Android App Development</Link></li>
+                                                                <li><Link to="iosdevelopment">iOS App Development</Link></li>
+                                                                <li><Link to="hybridappdevelopment">Hybrid App Development</Link></li>
+                                                                <li><Link to="nativeappdevelopment">Native App Development</Link></li>
                                                             </ul>
                                                         </li>
                                                         <li>
-                                                            <Link to="team.html">
+                                                            <Link to="gps">
                                                                 GPS Tracking Solution
 
                                                             </Link>
 
                                                         </li>
                                                         <li>
-                                                            <Link to="team.html">
+                                                            <Link to="web">
                                                                 Web Accessibility
 
                                                             </Link>
 
                                                         </li>
                                                         <li>
-                                                            <Link to="team.html">
+                                                            <Link to="iot">
                                                                 IOT Development
 
                                                             </Link>
@@ -144,13 +144,13 @@ const Header = () => {
                                                 </li>
 
                                                 <li>
-                                                <NavLink to="news.html">
+                                                <NavLink to="industries">
                                                         Industries
                                                     </NavLink>
                                                 </li>
                                                
                                                 <li>
-                                                    <NavLink to="contact.html">Portfolio</NavLink>
+                                                    <NavLink to="portfolio">Portfolio</NavLink>
                                                 </li>
 
                                                 <li>

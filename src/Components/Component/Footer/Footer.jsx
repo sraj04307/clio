@@ -1,7 +1,7 @@
 import React, {useEffect,useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Footer.css'
-// import img from '../../../assets/img/logo/img1.jpg'
+import img from '../../../assets/img/logo/img1.png'
 
 const Footer = () => {
 
@@ -84,7 +84,7 @@ const Footer = () => {
                     <div className="single-footer-widget">
                         <div className="widget-head">
                             <Link href="index.html">
-                                <img src="assets/img/logo/white-logo.svg" alt="logo-img"/>
+                                <img src={img} alt="logo-img"/>
                             </Link>
                         </div>
                         <div className="footer-content">

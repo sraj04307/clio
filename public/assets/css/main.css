@@ -11,8 +11,8 @@ Version: 1.0.0
   --body: #fff;
   --black: #000;
   --white: #fff;
-  --theme: #384BFF;
-  --theme2: #384BFF;
+  --theme: #002c89;
+  --theme2: #002c89;
   --header: #0F0D1D;
   --text: #585858;
   --text-2: #ffffffcc;
@@ -1889,7 +1889,7 @@ span {
   line-height: 70px;
   text-align: center;
   border-radius: 50%;
-  background: linear-gradient(180deg, #3C72FC -210.71%, #00060C 100%);
+  background: linear-gradient(180deg, #002c89 -210.71%, #00060C 100%);
   margin: 0 auto;
   margin-top: -35px;
   transition: all 0.4s ease-in-out;
@@ -4042,7 +4042,7 @@ span {
   -webkit-text-stroke-color: var(--text);
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite;
-  -webkit-mask-image: linear-gradient(-75deg, rgba(56, 75, 255, 0.15) 50%, #384BFF 50%, rgba(56, 75, 255, 0.15) 100%);
+  -webkit-mask-image: linear-gradient(-75deg, rgba(56, 75, 255, 0.15) 50%, #002c89 50%, rgba(56, 75, 255, 0.15) 100%);
   -webkit-mask-size: 200%;
 }
 @media (max-width: 1899px) {
@@ -6567,7 +6567,7 @@ input.main-search-input::placeholder {
   background-color: var(--white);
 }
 .service-box-items.style-3::before {
-  background: linear-gradient(180deg, #384BFF -23.85%, #6324B3 100%);
+  background: linear-gradient(180deg, #002c89 -23.85%, #6324B3 100%);
   border-radius: 10px;
 }
 .service-box-items.style-3::after {
@@ -6871,7 +6871,7 @@ input.main-search-input::placeholder {
   width: 100%;
   height: 100%;
   content: "";
-  background: linear-gradient(180deg, #3C72FC 0%, rgba(0, 6, 12, 0) 100%);
+  background: linear-gradient(180deg, #002c89 0%, rgba(0, 6, 12, 0) 100%);
   opacity: 0.9;
 }
 .main-sidebar .single-sidebar-image .contact-text {
