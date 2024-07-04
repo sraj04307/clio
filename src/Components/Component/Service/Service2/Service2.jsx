@@ -33,13 +33,13 @@ const Service2 = () => {
             </div>
             <div className="container">
                 <div className="section-title text-center">
-                    <span className={isScrolled?"wow fadeInUp active":'wow fadeInUp '}>Our offering</span>
-                    <h2 className={isScrolled?"wow fadeInUp active":'wow fadeInUp '} data-wow-delay=".3s">
+                    <span className={isScrolled?"wow  active":'wow  '}>Our offering</span>
+                    <h2 className={isScrolled?"wow  active":'wow  '} data-wow-delay=".3s">
                         Enhance and Pioneer Using <br/> Technology Trends
                     </h2>
                 </div>
                 <div className="row">
-                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow " data-wow-delay=".2s">
                         <div className={isScrolled?"offer-items active1":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
@@ -64,7 +64,7 @@ const Service2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow " data-wow-delay=".4s">
                     <div className={isScrolled?"offer-items active2":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
@@ -83,7 +83,7 @@ const Service2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
+                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow " data-wow-delay=".6s">
                     <div className={isScrolled?"offer-items active3 active":'offer-items active'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
@@ -110,7 +110,7 @@ const Service2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".8s">
+                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow " data-wow-delay=".8s">
                     <div className={isScrolled?"offer-items active4":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
@@ -133,7 +133,7 @@ const Service2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".9s">
+                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow " data-wow-delay=".9s">
                     <div className={isScrolled?"offer-items active5":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>
@@ -161,7 +161,7 @@ const Service2 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".9s">
+                    <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 wow " data-wow-delay=".9s">
                     <div className={isScrolled?"offer-items active6":'offer-items'}>
                             <div className="shape-top">
                                 <img src="assets/img/shape/offer-top.png" alt="shape-img"/>

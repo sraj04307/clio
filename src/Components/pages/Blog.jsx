@@ -32,7 +32,7 @@ const Blog = () => {
                <Card1 id={"id8"}/>
                
             </div>
-            <div className="page-nav-wrap pt-5 text-center wow fadeInUp" data-wow-delay=".3s">
+            <div className="page-nav-wrap pt-5 text-center wow " data-wow-delay=".3s">
                 <ul>
                     <li><Link className="page-numbers" to="#">01</Link></li>
                     <li><Link className="page-numbers" to="#">02</Link></li>

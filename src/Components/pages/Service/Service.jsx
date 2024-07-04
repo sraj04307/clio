@@ -35,8 +35,8 @@ const Service = () => {
             <section className="service-section fix section-padding">
                 <div className="container">
                     <div className="section-title text-center">
-                        <span className={isScrolled ? "wow fadeInUp ourservice active" : 'wow fadeInUp ourservice'}>OUR SERVICES</span>
-                        <h2 className={isScrolled ? "wow fadeInUp ourservice2 active" : 'wow fadeInUp ourservice'}>
+                        <span className={isScrolled ? "wow  ourservice active" : 'wow  ourservice'}>OUR SERVICES</span>
+                        <h2 className={isScrolled ? "wow  ourservice2 active" : 'wow  ourservice'}>
                             We Provide the Best Quality
                         </h2>
                     </div>
