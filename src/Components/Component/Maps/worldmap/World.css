@@ -1,273 +1,269 @@
-
-.world-section{
-    background: #f5f5f5;
-}
-.world-section h6{
-    font-size: 22px;
-    margin-bottom: 50px;
-    color: var(--header);
-    font-weight: 600;
-}
-
-.world-section .loc i img{
-    width: 30px;
+.world-section {
+  background: linear-gradient(
+    to bottom,
+    rgba(24, 24, 94, 1),
+    /* Fully opaque at the top */ rgba(24, 24, 94, 0.6)
+      /* Fully transparent at the bottom */
+  );
+  color: white !important;
 }
 
+.world-section .non-active {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
 
-.map{
-    position: relative;
-    max-width: 70%;
-    margin: 0 auto;
-}
-
-.map .img1{
-    /* transform: rotateX(50deg); */
-    filter: drop-shadow(2px 4px 6px black);
-    perspective: 1200px;
-    transform-style: preserve-3d;
-    
-    
+.world-section h2 {
+  font-weight: 600;
+  color: white;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0.3s;
 }
 
+.world-section span.active {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+  }
 
-.loc1{
-    position: absolute;
-    top: 25%;
-    left: 15%;
-    cursor: pointer;
-    animation: bounce 1s infinite alternate;
-    
-}
-.loc2{
-    position: absolute;
-    top: 44%;
-    left: 57%;
-    cursor: pointer;
-    animation: bounce 1s infinite alternate;
-}
-.loc3{
-    position: absolute;
-    top: 10%;
-    left: 12%;
-    cursor: pointer;
-    animation: bounce 1s infinite alternate;
-}
-.loc4{
-    position: absolute;
-    top: 54%;
-    left: 27%;
-    cursor: pointer;
-    animation: bounce 1s infinite alternate;
-}
-.loc5{
-    position: absolute;
-    top: 32%;
-    left: 68%;
-    cursor: pointer;
-    animation: bounce 1s infinite alternate;
+.world-section h2.active {
+  font-weight: 600;
+  color: white;
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all 0.4s ease-in-out 0.3s;
 }
 
-.loc6{
-    position: absolute;
-    top: 66%;
-    left: 82%;
-    cursor: pointer;
-    animation: bounce 1s infinite alternate;
+.world-section .loc i img {
+  width: 30px;
 }
-.loc7{
-    position: absolute;
+
+.map {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.world-section .map img {
+  width: 100%;
+  filter: invert(90%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.6s;
+}
+.world-section .map img.active{
+  width: 100%;
+  filter: invert(90%);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.6s;
+}
+
+.world-section .map i {
+  color: #000000;
+}
+
+.world-section .map .location {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Corrected to use rgba for transparency */
+  padding: 10px 0;
+  width: 200px;
+  max-height: none; /* Ensures the height can grow with content */
+  text-align: center;
+  border-radius: 3px;
+  display: none;
+}
+
+.world-section .map .location h6 {
+  color: white !important;
+  font-size: 18px;
+}
+
+.world-section .map .location span {
+  color: white !important;
+  font-size: 16px;
+}
+
+.world-section .map .pin1 {
+  position: absolute;
+  top: 16%;
+  left: 13%;
+  animation: mapanim1 0.8s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.world-section .map .pin2 {
+  position: absolute;
+  top: 16%;
+  left: 43%;
+  animation: mapanim2 0.8s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.world-section .map .pin3 {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  animation: mapanim3 0.8s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.world-section .map .pin4 {
+  position: absolute;
+  top: 43%;
+  left: 59%;
+  animation: mapanim4 0.8s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.world-section .map .pin5 {
+  position: absolute;
+  top: 45%;
+  left: 69%;
+  animation: mapanim5 0.8s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.world-section .map .pin6 {
+  position: absolute;
+  top: 42%;
+  left: 80%;
+  animation: mapanim6 0.8s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.world-section .map .pin7 {
+  position: absolute;
+  top: 67%;
+  left: 82%;
+  animation: mapanim7 0.8s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes mapanim1 {
+  from {
     top: 15%;
-    left: 61%;
-    cursor: pointer;
-    animation: bounce 1s infinite alternate;
+  }
+  to {
+    top: 16%;
+  }
 }
 
-.loc i{
-    color: #00013f;
-    transform: scale(1.2) perspective(300px) rotateX(-40deg);
+@keyframes mapanim2 {
+  from {
+    top: 15%;
+  }
+  to {
+    top: 16%;
+  }
 }
 
-.loc div{
-    background-color: rgba(99, 99, 99, 0.703);
-    text-align: center;
-    width: max-content;
-    display: none;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 5px;
-
-} 
-
-.loc div a{
-    color: white;
+@keyframes mapanim3 {
+  from {
+    top: 42%;
+  }
+  to {
+    top: 43%;
+  }
 }
 
-.loc1:hover div, .loc1 div:hover, .loc1 div a:hover{
-    display: block;
+@keyframes mapanim4 {
+  from {
+    top: 42%;
+  }
+  to {
+    top: 43%;
+  }
 }
-.loc2:hover div, .loc2 div:hover, .loc2 div a:hover{
-    display: block;
+
+@keyframes mapanim5 {
+  from {
+    top: 44%;
+  }
+  to {
+    top: 45%;
+  }
 }
-.loc3:hover div, .loc3 div:hover, .loc3 div a:hover{
-    display: block;
+
+@keyframes mapanim6 {
+  from {
+    top: 41%;
+  }
+  to {
+    top: 42%;
+  }
 }
-.loc4:hover div, .loc4 div:hover, .loc4 div a:hover{
-    display: block;
+
+@keyframes mapanim7 {
+  from {
+    top: 66%;
+  }
+  to {
+    top: 67%;
+  }
 }
-.loc5:hover div, .loc5 div:hover, .loc5 div a:hover{
-    display: block;
+
+.world-section .map .pin1:hover .location {
+  display: block;
 }
-.loc6:hover div, .loc6 div:hover, .loc6 div a:hover{
-    display: block;
+.world-section .map .pin2:hover .location {
+  display: block;
 }
-.loc7:hover div, .loc7 div:hover, .loc7 div a:hover{
-    display: block;
+.world-section .map .pin3:hover .location {
+  display: block;
+}
+.world-section .map .pin4:hover .location {
+  display: block;
+}
+.world-section .map .pin5:hover .location {
+  display: block;
+}
+.world-section .map .pin6:hover .location {
+  display: block;
+}
+.world-section .map .pin7:hover .location {
+  display: block;
 }
 
 
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-        filter: drop-shadow(0);
-    }
-    100% {
-        transform: translateY(8px);
-        filter: drop-shadow(0px 10px 10px #3d3d3d);
-    }
-}
+.world-section .map .pin1.active {
 
-.world-section span.non-active{
-    transform: translateX(-100%);
-    transition: all 0.4s ease-in-out;
-    opacity: 0;
-    text-align: center;
-    
-}
-
-.world-section span.active{
-    transform: translateX(0);
-    transition: all .4s ease-in-out;
     opacity: 1;
-}
-
-.world-section h2.non-active{
-    transform: translateX(-100%);
-    transition: all 0.4s ease-in-out;
-    opacity: 0;
-    text-align: center;
-    
-}
-
-.world-section h2.active{
-    transform: translateX(0);
-    transition: all .4s ease-in-out 0.3s;
+    transition: all 0.3s ease-in-out 0.9s;
+  }
+.world-section .map .pin2.active {
     opacity: 1;
-}
-.world-section .img1.non-active{
-    /* transform: translateX(-100%); */
-    transition: all 0.4s ease-in-out;
-    opacity: 0;
-    text-align: center;
-    
-}
-
-.world-section .img1.active{
-    /* transform: translateX(0); */
-    transition: all .4s ease-in-out .6s;
+    transition: all 0.3s ease-in-out 0.9s;
+  }
+.world-section .map .pin3.active {
     opacity: 1;
-}
-
-
-.world-section .loc1{
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    
-}
-
-.world-section .loc1.active{
-    transition: all .2s ease-in-out .8s;
+    transition: all 0.3s ease-in-out 0.9s;
+  }
+.world-section .map .pin4.active {
     opacity: 1;
-    
-}
+    transition: all 0.3s ease-in-out 0.9s;
+  }
 
-
-.world-section .loc2{
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    
-}
-
-.world-section .loc2.active{
-    transition: all .2s ease-in-out 1s;
+  .world-section .map .pin5.active {
     opacity: 1;
-}
+    transition: all 0.3s ease-in-out 0.9s;
+  }
 
-
-.world-section .loc3{
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    
-}
-
-.world-section .loc3.active{
-    transition: all .2s ease-in-out 1.2s;
+  .world-section .map .pin6.active {
     opacity: 1;
-}
+    transition: all 0.3s ease-in-out 0.9s;
+  }
 
-
-.world-section .loc4{
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    
-}
-
-.world-section .loc4.active{
-    transition: all .2s ease-in-out 1.4s;
+  .world-section .map .pin7.active {
     opacity: 1;
-}
-
-.world-section .loc5{
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    
-}
-
-.world-section .loc5.active{
-    transition: all .2s ease-in-out 1.6s;
-    opacity: 1;
-}
-
-.world-section .loc6{
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    
-}
-
-.world-section .loc6.active{
-    transition: all .2s ease-in-out 1.8s;
-    opacity: 1;
-}
-
-.world-section .loc7{
-    transition: all 0.2s ease-in-out;
-    opacity: 0;
-    
-}
-
-.world-section .loc7.active{
-    transition: all .2s ease-in-out 2s;
-    opacity: 1;
-}
-
-@keyframes trans1 {
-    
-    0%{
-        transform: scale(0);
-    }
-    50%{
-        transform: scale(1.2);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
+    transition: all 0.3s ease-in-out 0.9s;
+  }

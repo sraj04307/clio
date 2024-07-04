@@ -75,3 +75,12 @@ header .header-main .main-menu ul li a{
 header .header-button{
     animation: headanim1 0.8s ease-in-out;
 }
+
+.header-3 .header-main .header-right .header-button::before{
+    border-top: none;
+}
+
+.header-3::before{
+    background-color: transparent !important;
+
+}

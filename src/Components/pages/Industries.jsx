@@ -1,13 +1,27 @@
 import React from 'react'
 import Banner from '../../Components/Component/Banner/Banner2/Banner2'
 import Footer from '../../Components/Component/Footer/Footer'
+import Card4 from '../Card/Card4/Card4'
 
 
 const Industries = () => {
   return (
     <>
       <Banner message={"Industries"}/>
-      industries
+      <div className="container">
+        <div className="row my-5">
+        <Card4/>
+        <Card4/>
+        <Card4/>
+        <Card4/>
+        <Card4/>
+        <Card4/>
+        <Card4/>
+        <Card4/>
+        <Card4/>
+        </div>
+      </div>
+      
       <Footer/>
 
     </>

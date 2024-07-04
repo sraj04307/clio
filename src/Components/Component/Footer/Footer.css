@@ -22,7 +22,6 @@
 .footer-widgets-wrapper .single-footer-widget .footer-content .social-icon a:hover{
     transform: translateY(-15px);
     background-color: blue;
-    border: 2px dashed rgb(33, 63, 164);
     box-shadow: 1px 1px 10px rgb(193, 193, 193);
 }
 
@@ -144,4 +143,45 @@
 
 .footer-section{
     overflow: hidden;
+}
+
+.contact-info-area .contact-info-items .content h3 {
+    font-size: 16px;
+}
+
+.contact-info-area .contact-info-items .content p {
+    color: var(--white);
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact-info-area .contact-info-items .content h3 a {
+    color: var(--white);
+    font-size: 16px;
+}
+
+.social-icon .s1:hover{
+    background: #0e8ef2 !important;
+    border: none;
+}
+.social-icon .s2:hover{
+    background: #1d9ceb !important;
+    border: none;
+}
+.social-icon .s3:hover{
+    background: #0073ae !important;
+    border: none;
+}
+.social-icon .s4:hover{
+    background: #FF0000 !important;
+    border: none;
+}
+.social-icon .s5:hover{
+    background: #00AFF0 !important;
+    border: none !important;
+}
+
+.contact-info-area .contact-info-items:not(:last-child) {
+    border-right: none;
 }

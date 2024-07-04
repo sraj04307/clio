@@ -43,6 +43,12 @@ import Native from "./Components/pages/Native";
 import GPS from "./Components/pages/GPS";
 import Web from "./Components/pages/Web";
 import Iot from "./Components/pages/Iot";
+import WebDev from "./Components/pages/WebDev";
+import EcommerceSolution from "./Components/pages/EcommerceSolution";
+import DigitalMarketing from "./Components/pages/DigitalMarketing";
+import AppDev from "./Components/pages/AppDev";
+import WebAcceseblity from "./Components/pages/WebAcceseblity";
+import GraphicDesign from './Components/pages/GraphicDesign'
 
 
 function App() {
@@ -100,6 +106,16 @@ function App() {
             <Route path="gps" element={<GPS/>}/>
             <Route path="web" element={<Web/>}/>
             <Route path="iot" element={<Iot/>}/>
+
+            <Route path="web-development" element={<WebDev/>}/>
+            <Route path="graphic-design" element={<GraphicDesign />}/>
+            <Route path="ecommerce-solution" element={<EcommerceSolution/>}/>
+            <Route path="digital-marketing" element={<DigitalMarketing/>}/>
+            <Route path="app-development" element={<AppDev/>}/>
+            <Route path="web-accesseblity" element={<WebAcceseblity/>}/>
+           
+
+
 
           </Route>
         </Routes>

@@ -37,7 +37,7 @@ const Footer = () => {
                 <div className="content">
                     <p>Call Us 7/24</p>
                     <h3>
-                        <Link href="tel:+918368629185">+918368629185</Link>
+                        <Link to="tel:+918368629185">+918368629185</Link>
                     </h3>
                 </div>
             </div>
@@ -52,7 +52,7 @@ const Footer = () => {
                 <div className="content">
                     <p>Make a Quote</p>
                     <h3>
-                        <Link href="mailto:Info@cliocode.com">Info@cliocode.com</Link>
+                        <Link to="mailto:Info@cliocode.com">Info@cliocode.com</Link>
                     </h3>
                 </div>
             </div>
@@ -80,10 +80,10 @@ const Footer = () => {
         </div>
         <div className="container">
             <div className="row">
-                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp one active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp one'} data-wow-delay=".3s">
+                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow  one active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp one'} data-wow-delay=".3s">
                     <div className="single-footer-widget">
                         <div className="widget-head">
-                            <Link href="index.html">
+                            <Link to="index.html">
                                 <img src={img} alt="logo-img"/>
                             </Link>
                         </div>
@@ -94,53 +94,56 @@ const Footer = () => {
                                 curabitur lacinia mollis
                             </p>
                             <div className="social-icon d-flex align-items-center">
-                                <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                                <Link href="#"><i className="fab fa-twitter"></i></Link>
-                                <Link href="#"><i className="fa-brands fa-linkedin-in"></i></Link>
-                                <Link href="#"><i className="fa-brands fa-youtube"></i></Link>
+                                <Link to="#" className='s1'><i className="fab fa-facebook-f"></i></Link>
+                                <Link to="#" className='s2'><i className="fab fa-twitter"></i></Link>
+                                <Link to="#" className='s3'><i className="fa-brands fa-linkedin-in"></i></Link>
+                                <Link to="#" className='s4'><i className="fa-brands fa-youtube"></i></Link>
+                                <Link>
+                                <i class="fa-brands fa-skype"></i>
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp two active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp two'} data-wow-delay=".5s">
+                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow  two active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp two'} data-wow-delay=".5s">
                     <div className="single-footer-widget">
                         <div className="widget-head">
                             <h3>Quick Links</h3>
                         </div>
                         <ul className="list-area">
                             <li>
-                                <Link href="about.html">
+                                <Link to="/">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     Home
                                 </Link>
                             </li>
-                            <li>
-                                <Link href="service.html">
+                            {/* <li>
+                                <Link to="service.html">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     Our Story
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
-                                <Link href="news.html">
+                                <Link to="/service">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     Our Services
                                 </Link>
                             </li>
                             <li>
-                                <Link href="faq.html">
+                                <Link to="">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     Industries
                                 </Link>
                             </li>
                             <li>
-                                <Link href="faq.html">
+                                <Link to="">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     Portfolio
                                 </Link>
                             </li>
                             <li>
-                                <Link href="contact.html">
+                                <Link to="/contact">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     Contact Us
                                 </Link>
@@ -149,41 +152,41 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp three active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp three'} data-wow-delay=".5s">
+                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow  three active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp three'} data-wow-delay=".5s">
                     <div className="single-footer-widget style-margin">
                         <div className="widget-head">
                             <h3>Our Service</h3>
                         </div>
                         <ul className="list-area">
                             <li>
-                                <Link href="service-details.html">
+                                <Link to="/web-development">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     Web Development
                                 </Link>
                             </li>
                             <li>
-                                <Link href="service-details.html">
+                                <Link to="/app-development">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     App Development
                                 </Link>
                             </li>
 
                             <li>
-                                <Link href="service-details.html">
+                                <Link to="/ecommerce-solution">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     E-commerce Solution
                                 </Link>
                             </li>
                             <li>
-                                <Link href="service-details.html">
+                                <Link to="/digital-marketing">
                                     <i className="fa-solid fa-chevron-right"></i>
                                     Digital Marketing
                                 </Link>
                             </li>
                             <li>
-                                <Link href="service-details.html">
+                                <Link to="/graphic-design">
                                     <i className="fa-solid fa-chevron-right"></i>
-                                    Gps Tracking Solution
+                                    Graphics Designing
                                 </Link>
                             </li>
                     
@@ -191,7 +194,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp four active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp four'} data-wow-delay=".7s">
+                <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow  four active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp four'} data-wow-delay=".7s">
                             <div className="single-footer-widget style-margin">
                                 <div className="widget-head">
                                     <h3>Newsletter</h3>
@@ -218,23 +221,23 @@ const Footer = () => {
         <div className="container">
             <div className="footer-wrapper d-flex align-items-center justify-content-between">
                 <p className={isScrolled?"wow fadeInLeft color-2 index1 active":'wow fadeInLeft color-2 index1'} data-wow-delay=".3s">
-                    © All Copyright 2024 by <Link href="index.html">Infotech</Link>
+                    © All Copyright 2024 by <Link to="index.html">Infotech</Link>
                 </p>
                 <ul className={isScrolled?"footer-menu wow fadeInRight index2 active":'footer-menu wow fadeInRight index2'} data-wow-delay=".5s">
                     <li>
-                        <Link href="contact.html">
+                        <Link to="contact.html">
                             Terms & Condition
                         </Link>
                     </li>
                     <li>
-                        <Link href="contact.html">
+                        <Link to="contact.html">
                             Privacy Policy
                         </Link>
                     </li>
                 </ul>
             </div>
         </div>
-        <Link href="#" id="scrollUp" className="scroll-icon">
+        <Link to="#" id="scrollUp" className="scroll-icon">
             <i className="far fa-arrow-up"></i>
         </Link>
     </div>

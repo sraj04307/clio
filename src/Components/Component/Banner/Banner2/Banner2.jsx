@@ -5,16 +5,13 @@ import './Banner2.css'
 const Banner2 = (props) => {
   return (
     <div className="breadcrumb-wrapper bg-cover">
-    <div className="border-shape">
-        <img src="assets/img/element.png" alt="shape-img"/>
-    </div>
     <div className="line-shape">
         <img src="assets/img/line-element.png" alt="shape-img"/>
     </div>
     <div className="container">
         <div className="page-heading">
-            <h1 className="wow fadeInUp" data-wow-delay=".3s">{props.message}</h1>
-            <ul className="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+            <h1 className="wow" data-wow-delay=".3s">{props.message}</h1>
+            <ul className="breadcrumb-items wow" data-wow-delay=".5s">
                 <li>
                     <Link to="index.html">
                         Home

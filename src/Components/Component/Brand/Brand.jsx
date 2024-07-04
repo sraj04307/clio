@@ -32,13 +32,13 @@ const Brand = () => {
         <div className="brand-section fix section-padding">
             <div className="container">
                 <div className="brand-wrapper">
-                    <h6 className="text-center wow fadeInUp" data-wow-delay=".3s">1k + Brands Trust Us</h6>
+                    <h6 className="text-center">1k + Brands Trust Us</h6>
                     <div className="swiper brand-slider">
-                        <div className="swiper-wrapper">
+                        <div className="swiper-wrapper ">
 
                             <Swiper
                                 modules={[Navigation, A11y, Autoplay]}
-                                spaceBetween={50}
+                                spaceBetween={30}
                                 loop={true}
                                 autoplay={{
                                     delay: 4000, 

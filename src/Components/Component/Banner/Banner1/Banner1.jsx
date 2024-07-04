@@ -14,9 +14,6 @@ const Banner = () => {
 
     return (
         <section className="hero-section fix hero-3">
-            <div className="bottom-shape">
-                <img src="assets/img/hero/bottom-shape.png" alt="shape-img" />
-            </div>
 
             <Swiper
                   modules={[Navigation, A11y, Autoplay]}
@@ -58,10 +55,7 @@ const Banner = () => {
                                             Consectetur adipiscing elit aenean scelerisque at augue vitae consequat <br /> quisque eget congue velit in cursus leo sed sodales est eget turpis.
                                         </p>
                                         <div className="hero-button">
-                                            <Link to="about.html" data-animation="slideInRight" data-duration="2s" data-delay=".9s" className="theme-btn hover-white">
-                                                Explore More
-                                                <i className="fa-solid fa-arrow-right-long"></i>
-                                            </Link>
+                                           
                                             <Link to="contact.html" data-animation="slideInRight" data-duration="2s" data-delay=".9s" className="theme-btn border-white">
                                                 Contact Us
                                                 <i className="fa-solid fa-arrow-right-long"></i>
@@ -101,10 +95,7 @@ const Banner = () => {
                                             Consectetur adipiscing elit aenean scelerisque at augue vitae consequat <br /> quisque eget congue velit in cursus leo sed sodales est eget turpis.
                                         </p>
                                         <div className="hero-button">
-                                            <Link to="about.html" data-animation="slideInRight" data-duration="2s" data-delay=".9s" className="theme-btn hover-white">
-                                                Explore More
-                                                <i className="fa-solid fa-arrow-right-long"></i>
-                                            </Link>
+                                           
                                             <Link to="contact.html" data-animation="slideInRight" data-duration="2s" data-delay=".9s" className="theme-btn border-white">
                                                 Contact Us
                                                 <i className="fa-solid fa-arrow-right-long"></i>
@@ -144,10 +135,7 @@ const Banner = () => {
                                             Consectetur adipiscing elit aenean scelerisque at augue vitae consequat <br /> quisque eget congue velit in cursus leo sed sodales est eget turpis.
                                         </p>
                                         <div className="hero-button">
-                                            <Link to="about.html" data-animation="slideInRight" data-duration="2s" data-delay=".9s" className="theme-btn hover-white">
-                                                Explore More
-                                                <i className="fa-solid fa-arrow-right-long"></i>
-                                            </Link>
+                                    
                                             <Link to="contact.html" data-animation="slideInRight" data-duration="2s" data-delay=".9s" className="theme-btn border-white">
                                                 Contact Us
                                                 <i className="fa-solid fa-arrow-right-long"></i>

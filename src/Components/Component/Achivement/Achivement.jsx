@@ -2,27 +2,28 @@ import React,{useState} from 'react'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
 import './Achivement.css'
+import img1 from '../../../assets/img/ClioCode Icon/Finished Projects.png'
+import img2 from '../../../assets/img/ClioCode Icon/Satisfied Clients.png'
+import img3 from '../../../assets/img/ClioCode Icon/Skill-Expert.png'
+import img4 from '../../../assets/img/ClioCode Icon/Social media.png'
 
 const Achivement = () => {
 
     const [counterOn, setCounterOn] = useState(true);
   return (
     <section className="achievement-section-3 fix section-bg-2">
-    <div className="shape-image">
-        <img src="assets/img/achiv-shape.png" alt="shape-img"/>
-    </div>
     <div className="container">
         <div className="achievement-wrapper style-2">
             <div className="section-title mb-0 w-100 text-center">
-                <span className="text-white wow fadeInUp w-100">achievement</span>
-                <h2 className="text-white wow fadeInUp w-100" data-wow-delay=".3s">
+                <span className="text-white">achievement</span>
+                <h2 className="text-white" data-wow-delay=".3s">
                     Why Choose Us
                 </h2>
             </div>
             <div className="counter-area">
                 <div className="counter-items wow fadeInUp" data-wow-delay=".3s">
                     <div className="icon">
-                        <img src="assets/img/achievement-icon/01.svg" alt="icon-img"/>
+                        <img src={img2} alt="icon-img"/>
                     </div>
                     <div className="content">
                         <h2><span className="count">
@@ -40,7 +41,7 @@ const Achivement = () => {
                 </div>
                 <div className="counter-items wow fadeInUp" data-wow-delay=".5s">
                     <div className="icon">
-                        <img src="assets/img/achievement-icon/02.svg" alt="icon-img"/>
+                        <img src={img1} alt="icon-img"/>
                     </div>
                     <div className="content">
                         <h2><span className="count">
@@ -58,7 +59,7 @@ const Achivement = () => {
                 </div>
                 <div className="counter-items wow fadeInUp" data-wow-delay=".7s">
                     <div className="icon">
-                        <img src="assets/img/achievement-icon/03.svg" alt="icon-img"/>
+                        <img src={img3} alt="icon-img"/>
                     </div>
                     <div className="content">
                         <h2><span className="count">
@@ -76,7 +77,7 @@ const Achivement = () => {
                 </div>
                 <div className="counter-items wow fadeInUp" data-wow-delay=".9s">
                     <div className="icon">
-                        <img src="assets/img/achievement-icon/04.svg" alt="icon-img"/>
+                        <img src={img4} alt="icon-img"/>
                     </div>
                     <div className="content">
                         <h2><span className="count">
