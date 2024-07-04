@@ -8,7 +8,7 @@
 .fadeInUp {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
-    display: flex;
+    display: flex; 
     align-items: center;
     gap: 20px;
 }
@@ -20,4 +20,12 @@
 
 .achievement-wrapper.style-2 .counter-area {
     gap: 40px;
+}
+
+.achievement-section-3{
+    background: url('../../../assets/img/desktop-with-computer-cloud-computing-screen-modern-home-office-with-cloud-computing-concept.jpg');
+
+    background-size: 100%;
+    background-attachment: fixed;
+
 }

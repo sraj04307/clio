@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Banner2 from '../../Component/Banner/Banner2/Banner2'
 import Footer from '../../Component/Footer/Footer'
 import Brand2 from '../../Component/Brand/Brand2/Brand2'
@@ -26,6 +26,16 @@ import img20 from '../../../assets/img/All Logo/20.jpg'
 
 
 const HappyClient = () => {
+
+  useEffect(() => {
+    document.title = "Happy Client"; // Set the document title to "Home"
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    metaDescription.setAttribute("content", "Happy Client");
+
+  }, []);
+
+
   return (
     <>
         <Banner2 message={"Our Happy Client"}/>

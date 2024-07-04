@@ -1,10 +1,20 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Banner2 from "../../Component/Banner/Banner2/Banner2";
 import Footer from '../../Component/Footer/Footer.jsx'
 import Card3 from "../../Card/Card3/Card3.jsx";
 
 
 const Teamspage = () => {
+
+  useEffect(() => {
+    document.title = "Our Experts"; // Set the document title to "Home"
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    metaDescription.setAttribute("content", "Our Experts");
+
+  }, []);
+
+
   return (
     <>
       <Banner2 message={"Our Experts"} />

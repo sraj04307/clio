@@ -1,9 +1,19 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Banner2 from '../Component/Banner/Banner2/Banner2'
 import Footer from '../Component/Footer/Footer'
 import Testi2 from '../Component/Testimonial/Test2/Testi2'
 
 const ClientTestimonial = () => {
+
+  useEffect(() => {
+    document.title = "Client Testimonial"; // Set the document title to "Home"
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    metaDescription.setAttribute("content", "Client Testimonial");
+
+  }, []);
+
+
   return (
     <>
         <Banner2 message={"Client Testimonial"}/>

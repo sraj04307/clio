@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Banner2 from '../Component/Banner/Banner2/Banner2'
 import About2 from '../Component/About/About2/About2'
 import Service2 from '../Component/Service/Service2/Service2'
@@ -7,6 +7,16 @@ import Brand from '../Component/Brand/Brand'
 import Footer from '../Component/Footer/Footer'
 
 const About = () => {
+
+  useEffect(() => {
+    document.title = "About"; // Set the document title to "Home"
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    metaDescription.setAttribute("content", "About");
+
+  }, []);
+
+
   return (
     <>
       <Banner2 message={"About Us"}/>

@@ -17,6 +17,11 @@ const Service = () => {
           setIsScrolled(false);
         }
       };
+
+      document.title = "Service"; // Set the document title to "Home"
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    metaDescription.setAttribute("content", "Service");
   
       window.addEventListener('scroll', handleScroll);
       return () => {

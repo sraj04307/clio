@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Card1 from '../Card/Card1/Card1'
 import { Link } from 'react-router-dom'
 import Banner2 from '../Component/Banner/Banner2/Banner2'
@@ -6,6 +6,16 @@ import Footer from '../Component/Footer/Footer'
 
 
 const Blog = () => {
+
+  useEffect(() => {
+    document.title = "Blog"; // Set the document title to "Home"
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    metaDescription.setAttribute("content", "Blog");
+
+  }, []);
+
+
   return (
     <>
     <Banner2 message={"Blog Grid"}/>
