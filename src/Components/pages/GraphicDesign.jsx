@@ -10,6 +10,8 @@ const GraphicDesign = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Graphic Designing");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
   return (

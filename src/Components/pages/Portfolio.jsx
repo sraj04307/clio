@@ -12,6 +12,8 @@ const Portfolio = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "portfolio");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
 

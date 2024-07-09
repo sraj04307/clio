@@ -1,26 +1,9 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './Service1.css'
 
 const Service = () => {
 
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 600) { 
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
 
   return (
     <section className="service-section-3 pb-0 fix section-padding bg-cover" 
@@ -28,18 +11,18 @@ const Service = () => {
     <div className="container">
         <div className="section-title-area">
             <div className="section-title">
-                <span className={isScrolled ?'active' : ''}>What We Do</span>
-                <h2 className={isScrolled ?'active' : ''}>
+                <span className={'active'}>What We Do</span>
+                <h2 className={'active'}>
                     We Solve IT Problems <br/> With Technology
                 </h2>
             </div>
-            <Link to="service.html" className={isScrolled ? "theme-btn active" : 'theme-btn'}>
+            <Link to="service.html" className={"theme-btn active"}>
                 See all Services
                 <i className="fa-solid fa-arrow-right-long"></i>
             </Link>
         </div>
         <div className="row">
-            <div className={isScrolled ? "col-xl-3 col-lg-4 col-md-6 my-card1 active" :'col-xl-3 col-lg-4 col-md-6 my-card1'}>
+            <div className={"col-xl-3 col-lg-4 col-md-6 my-card1 active"}>
                 <div className="service-card-items">
                     <div className="service-image">
                         <img src="assets/img/service/06.jpg" alt="service-img"/>
@@ -65,7 +48,7 @@ const Service = () => {
                 </div>
             </div>
             
-            <div className={isScrolled ? "col-xl-3 col-lg-4 col-md-6 my-card2 active" :'col-xl-3 col-lg-4 col-md-6 my-card2'}>
+            <div className={"col-xl-3 col-lg-4 col-md-6 my-card2 active"}>
                 <div className="service-card-items">
                     <div className="service-image">
                         <img src="assets/img/service/07.jpg" alt="service-img"/>
@@ -91,7 +74,7 @@ const Service = () => {
                 </div>
             </div>
 
-            <div className={isScrolled ? "col-xl-3 col-lg-4 col-md-6 my-card3 active" :'col-xl-3 col-lg-4 col-md-6 my-card3'}>
+            <div className={"col-xl-3 col-lg-4 col-md-6 my-card3 active"}>
                 <div className="service-card-items">
                     <div className="service-image">
                         <img src="assets/img/service/08.jpg" alt="service-img"/>
@@ -117,7 +100,7 @@ const Service = () => {
                 </div>
             </div>
 
-            <div className={isScrolled ? "col-xl-3 col-lg-4 col-md-6 my-card4 active" :'col-xl-3 col-lg-4 col-md-6 my-card4'}>
+            <div className={"col-xl-3 col-lg-4 col-md-6 my-card4 active"}>
                 <div className="service-card-items">
                     <div className="service-image">
                         <img src="assets/img/service/09.jpg" alt="service-img"/>
@@ -144,7 +127,7 @@ const Service = () => {
             </div>
         </div>
     </div>
-    <div className={isScrolled ? "cta-banner-2 section-padding active":"cta-banner-2 section-padding"}>
+    <div className={"cta-banner-2 section-padding active"}>
         <div className="container">
             <div className="cta-wrapper-2">
                 <div className="author-icon">

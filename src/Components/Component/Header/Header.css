@@ -84,3 +84,74 @@ header .header-button{
     background-color: transparent !important;
 
 }
+
+.sidemenu-container{
+    position: absolute;
+    top: 0;
+    background-color: rgba(15, 15, 15, 0.584);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidemenu{
+    background: white;
+    height: 100vh;
+}
+
+.side-space-left{
+    min-height: 100vh;
+    display: block;
+}
+
+.sidemenu-container nav li .submenu{
+    display: none;
+}
+
+.sidemenu-container nav li .submenu.active1{
+    display: block;
+}
+.sidemenu-container nav li .submenu.active2{
+    display: block;
+}
+
+header .sidemenu-container{
+    transform: translateX(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+header .sidemenu-container.active3{
+    transform: translateX(0%);
+    transition: all 0.3s ease-in-out;
+}
+
+header .logo2{
+    width: 160px;
+    
+}
+header .close-btn-container i{
+    font-size: 25px;
+    color: #243a82;
+
+}
+
+.sidemenu-container nav ul li{
+    padding: 5px 10px;
+}
+
+.sidemenu-container nav ul li a{
+    font-size: 18px;
+    
+}
+
+.sidemenu-container nav ul li ul li{
+    padding: 3px 10px;
+}
+
+.sidemenu-container nav ul li ul li a{
+    font-size: 16px;
+    
+}
+
+.sidebar__toggle{
+    font-size: 40px;
+}

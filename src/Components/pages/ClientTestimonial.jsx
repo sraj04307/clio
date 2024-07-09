@@ -11,6 +11,8 @@ const ClientTestimonial = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Client Testimonial");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
 

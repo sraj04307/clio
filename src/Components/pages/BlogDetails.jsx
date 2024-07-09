@@ -10,6 +10,8 @@ const BlogDetails = () => {
     
         const metaDescription = document.querySelector('meta[name="description"]');
         metaDescription.setAttribute("content", "Blog Details");
+
+        window.scrollTo(0, 0);
     
       }, []);
     

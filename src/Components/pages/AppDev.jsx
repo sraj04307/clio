@@ -10,6 +10,8 @@ const AppDev = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "App Development");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
   return (

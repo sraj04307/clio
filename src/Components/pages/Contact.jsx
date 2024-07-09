@@ -12,6 +12,7 @@ const Contact = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Contact");
 
+    window.scrollTo(0,0);
   }, []);
 
 

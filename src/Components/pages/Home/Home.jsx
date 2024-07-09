@@ -17,6 +17,8 @@ const Home = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Home");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
   return (

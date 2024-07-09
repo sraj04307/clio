@@ -10,6 +10,8 @@ const DigitalMarketing = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Digital Marketing");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
   return (

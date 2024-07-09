@@ -1,33 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import './Card3.css'
 import { Link } from 'react-router-dom'
 import img1 from '../../../assets/img/teams/Person 1.jpg'
 
 const Card3 = ({ id }) => {
 
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      if (scrollPosition > 200) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
 
 
-    <div className={'col-xl-3 col-lg-4 col-md-6 wow fadeInUp card3 p-2'} data-wow-delay=".3s">
-      <div className={isScrolled ? `single-team-items active ${id}` : `single-team-items`}>
+    <div className={'col-xl-3 col-lg-4 col-md-6 card3 p-2'} data-wow-delay=".3s">
+      <div className={`single-team-items active ${id}`}>
         <div className="team-image">
           <img src={img1} alt="team-img" />
           <div className="social-profile">

@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import img1 from '../../../assets/img/teams/Person 1.jpg'
 import img2 from '../../../assets/img/teams/Person 2.jpg'
@@ -8,26 +8,6 @@ import './Teams.css'
 
 
 const Teams = ({props}) => {
-
-
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 1300) { 
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
-  
 
   return (
     <section className="team-section-3 fix section-padding section-bg">
@@ -40,18 +20,18 @@ const Teams = ({props}) => {
             <div className="container">
                 <div className="section-title-area">
                     <div className="section-title">
-                        <span className={isScrolled?"wow fadeInUp active":'wow fadeInUp '}>Team Members</span>
-                        <h2 className={isScrolled?"wow fadeInUp active":'wow fadeInUp '} data-wow-delay=".3s">
+                        <span className={"wow fadeInUp active"}>Team Members</span>
+                        <h2 className={"wow fadeInUp active"} data-wow-delay=".3s">
                             Our Dedicated Team <br/> Members
                         </h2>
                     </div>
-                    <Link to="team.html" className={isScrolled?"theme-btn wow fadeInUp active":'theme-btn wow fadeInUp'} data-wow-delay=".5s">
+                    <Link to="team.html" className={"theme-btn wow fadeInUp active"} data-wow-delay=".5s">
                         All Member
                         <i className="fa-solid fa-arrow-right-long"></i>
                     </Link>
                 </div>
                 <div className="row">
-                    <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp card1 active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp card1'} data-wow-delay=".3s">
+                    <div className={"col-xl-3 col-lg-4 col-md-6 card1 active"} data-wow-delay=".3s">
                         <div className="single-team-items">
                             <div className="team-image">
                                 <img src={img1} alt="team-img"/>
@@ -73,7 +53,7 @@ const Teams = ({props}) => {
                             </div>
                         </div>
                     </div>
-                    <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp card2 active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp card2'} data-wow-delay=".5s">
+                    <div className={"col-xl-3 col-lg-4 col-md-6 card2 active"} data-wow-delay=".5s">
                     <div className="single-team-items">
                             <div className="team-image">
                                 <img src={img2} alt="team-img"/>
@@ -95,7 +75,7 @@ const Teams = ({props}) => {
                             </div>
                         </div>
                     </div>
-                    <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp card3 active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp card3'} data-wow-delay=".7s">
+                    <div className={"col-xl-3 col-lg-4 col-md-6 card3 active"} data-wow-delay=".7s">
                     <div className="single-team-items">
                             <div className="team-image">
                                 <img src={img3} alt="team-img"/>
@@ -117,7 +97,7 @@ const Teams = ({props}) => {
                             </div>
                         </div>
                     </div>
-                    <div className={isScrolled?"col-xl-3 col-lg-4 col-md-6 wow fadeInUp card4 active":'col-xl-3 col-lg-4 col-md-6 wow fadeInUp card4'} data-wow-delay=".9s">
+                    <div className={"col-xl-3 col-lg-4 col-md-6 card4 active"} data-wow-delay=".9s">
                     <div className="single-team-items">
                             <div className="team-image">
                                 <img src={img4} alt="team-img"/>

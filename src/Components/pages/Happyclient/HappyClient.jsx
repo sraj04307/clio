@@ -33,6 +33,8 @@ const HappyClient = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Happy Client");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
 

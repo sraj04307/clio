@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import './Testi.css'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y, Pagination, Autoplay } from 'swiper/modules';
@@ -10,29 +10,12 @@ import 'swiper/css/scrollbar';
 
 const Testi = () => {
 
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 2700) { 
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
 
     return (
         <section className="tesimonial-section-3 section-padding section-bg-2 bg-cover">
-            <div className="line-shape">
-                <img src="assets/img/team/line-shape.png" alt="shape-img" />
-            </div>
+            {/* <div className="line-shape">
+                <img src="assets/img/team/line-shape.png" alt="shape-img"  />
+            </div> */}
             <div className="mask-shape">
                 <img src="assets/img/team/mask-shape.png" alt="shape-img" />
             </div>
@@ -43,15 +26,15 @@ const Testi = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 text-center">
-                    <span className={isScrolled?"text-white span-active":'text-white span-nonactive'}>Testimonials</span>
-                    <h2 className={isScrolled?"text-white h2-active":'text-white h2-nonactive'}>
+                    <span className={"text-white span-active"}>Testimonials</span>
+                    <h2 className={"text-white h2-active"}>
                                 People Who Already Love Us
                             </h2>
                     </div>
                     <div className="col-md-6">
                         <div className="section-title text-center">
                            
-                            <div className={isScrolled?"swiper testimonial-slider-2 left active":'swiper testimonial-slider-2 left'}>
+                            <div className={"swiper testimonial-slider-2 left active"}>
                                 <div className="swiper-wrapper">
 
                                     <Swiper
@@ -202,7 +185,7 @@ const Testi = () => {
                         
                     <div className="section-title text-center">
                            
-                           <div className={isScrolled?"swiper testimonial-slider-2 right active":'swiper testimonial-slider-2 right'}>
+                           <div className={"swiper testimonial-slider-2 right active"}>
                                <div className="swiper-wrapper">
 
                                    <Swiper

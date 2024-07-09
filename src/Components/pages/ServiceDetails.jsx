@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Banner2 from '../Component/Banner/Banner2/Banner2'
 import Footer from '../Component/Footer/Footer'
 
 const ServiceDetails = () => {
+
+    useEffect=(()=>{
+        window.scrollTo(0, 0);
+    })
+
   return (
     <>
         <Banner2 message={"Service Details"} />

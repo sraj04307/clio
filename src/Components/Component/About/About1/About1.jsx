@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './About1.css'
 import { Link } from 'react-router-dom'
 import CountUp from 'react-countup'
@@ -8,34 +8,13 @@ const About = () => {
 
     const [counterOn, setCounterOn] = useState(true);
 
-
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        if (scrollPosition > 100) { 
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
-  
-
-
     return (
-        <section className={isScrolled ? "about-section section-padding fix bg-cover active" : 'about-section section-padding fix bg-cover'}>
+        <section className={"about-section section-padding fix bg-cover active"}>
             <div className="container">
                 <div className="about-wrapper-2">
                     <div className="row">
     
-                        <div className={isScrolled ? 'myfadein-left active col-lg-6 wow fadeInUp' : 'col-lg-6 wow fadeInUp myfadein-left'} data-wow-delay=".4s">
+                        <div className={'myfadein-left active col-lg-6 wow fadeInUp'} data-wow-delay=".4s">
                             <div className="about-image">
                                 <div className="shape-image">
                                     <img src="assets/img/about/shape.png" alt="shape-img" />
@@ -44,7 +23,7 @@ const About = () => {
                                     <img src="assets/img/about/circle.png" alt="shape-img" />
                                 </div>
                                 <img src="assets/img/about/07.jpg" alt="about-img" />
-                                <div className={isScrolled ? "content active" : 'content'}>
+                                <div className={"content active"}>
                                     <h2>
                                         <span className="count">
                                             <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
@@ -63,15 +42,15 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className={isScrolled ? 'myfadein-right active col-lg-6 wow fadeInUp' : 'col-lg-6 wow fadeInUp myfadein-right'}>
-                            <div className="about-content">
+                        <div className={'myfadein-right active col-lg-6 wow fadeInUp'}>
+                            <div className="about-content mt-4 mt-lg-0">
                                 <div className="section-title">
                                     <span className="wow fadeInUp">ABOUT INFOTECK</span>
                                     <h2 className="wow fadeInUp" data-wow-delay=".3s">
                                         We Can Clients with the <br /> About Solution
                                     </h2>
                                 </div>
-                                <p className="mt-3 mt-md-0 wow fadeInUp" data-wow-delay=".5s">
+                                <p className=" wow fadeInUp" data-wow-delay=".5s">
                                     It is a long established fact that a reader will be distracted the readable <br /> content of a page when looking at layout the point.It is a long established fact that a reader will be distracted the readable <br /> content of a page when looking at layout the point.
                                 </p>
 

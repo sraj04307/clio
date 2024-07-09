@@ -14,6 +14,8 @@ const About = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "About");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
 

@@ -1,12 +1,17 @@
 .sr-slider-img{
-    background-image: url("../../../../assets//img/Home\ Page\ Banner/1.jpg");}
+    background-image: url("../../../../assets//img/Home\ Page\ Banner/1.jpg");
+    background-size:100%;
+}
+    
 
 .sr-slider-image2{
     background-image: url("../../../../assets//img/Home\ Page\ Banner/2.jpg");
+    background-size: 100%;
     
 }
 .sr-slider-image3{
     background-image: url("../../../../assets//img/Home\ Page\ Banner/3.jpg");
+    background-size: 100%;
 }
 
 

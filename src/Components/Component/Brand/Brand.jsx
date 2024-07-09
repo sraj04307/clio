@@ -48,8 +48,8 @@ const Brand = () => {
 
                                 breakpoints={{
                                     // when window width is >= 576px
-                                    576: {
-                                        slidesPerView: 1,
+                                    320: {
+                                        slidesPerView: 2,
                                         spaceBetween: 20
                                     },
                                     // when window width is >= 768px

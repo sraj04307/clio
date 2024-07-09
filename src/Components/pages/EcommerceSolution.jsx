@@ -10,6 +10,8 @@ const EcommerceSolution = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Ecommerce Solution");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
   return (

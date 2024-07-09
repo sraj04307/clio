@@ -10,6 +10,8 @@ const WebAcceseblity = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Web Accesseblity");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
   return (

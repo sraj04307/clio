@@ -12,6 +12,8 @@ const Teamspage = () => {
     const metaDescription = document.querySelector('meta[name="description"]');
     metaDescription.setAttribute("content", "Our Experts");
 
+    window.scrollTo(0, 0);
+
   }, []);
 
 
