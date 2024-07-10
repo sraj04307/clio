@@ -69,3 +69,45 @@
     transition: all 0.4s ease-in-out .6s;
 }
 
+
+@media (max-width: 768px){
+    .testimonial-box-items {
+        height: fit-content;
+    }
+
+    .testimonial-box-items{
+        padding: 20px;
+    }
+
+    .testimonial-box-items{
+        margin-bottom: 40px !important;
+    }
+    /* .testimonial-box-items .client-items{
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+
+    .testimonial-box-items .icon {
+        display: none;
+    }
+
+    .testimonial-box-video {
+        margin-top: 0px;
+        height: 200px;
+    }
+
+    .testimonial-box-items .client-content{
+        text-align: start;
+    }
+    .testimonial-box-items p{
+        text-align: start;
+    }
+
+    .map {
+        max-width: 100% !important;
+    }
+
+    .tesimonial-section-3 h2{
+        font-size: 20px;
+    }
+}

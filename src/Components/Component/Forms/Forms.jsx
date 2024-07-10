@@ -22,7 +22,7 @@ const Forms = () => {
                                         <div className="content">
                                             <p>Call Us 7/24</p>
                                             <h3>
-                                                <Link to="tel:+2085550112">+208-555-0112</Link>
+                                                <Link to="tel:+918368629185">+918368629185</Link>
                                             </h3>
                                         </div>
                                     </div>
@@ -37,7 +37,7 @@ const Forms = () => {
                                         <div className="content">
                                             <p>Make a Quote</p>
                                             <h3>
-                                                <Link to="mailto:infotech@gmail.com">Infotech@gmail.com</Link>
+                                                <Link to="mailto:Info@Cliocode.Com">Info@Cliocode.com</Link>
                                             </h3>
                                         </div>
                                     </div>
@@ -50,8 +50,8 @@ const Forms = () => {
                                         </div>
                                         <div className="content">
                                             <p>Location</p>
-                                            <h3>
-                                                4517 Washington ave.
+                                            <h3>Greater Noida, UP (201310)
+
                                             </h3>
                                         </div>
                                     </div>

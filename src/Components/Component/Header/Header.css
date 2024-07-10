@@ -152,6 +152,31 @@ header .close-btn-container i{
     
 }
 
-.sidebar__toggle{
+.sidebar__toggle i{
     font-size: 40px;
+}
+
+
+header .service-menu div{
+position: relative;
+display: flex;
+justify-content: space-between;
+}
+
+header .service-menu ul{
+    display: none;
+    transform-origin: top;
+    transform: rotate(-90deg);
+    visibility:hidden;
+    transition: all 0.3s ease-in-out;
+}
+header .service-menu ul.active4{
+    display: block;
+    transform: rotate(0deg);
+    visibility:visible;
+    transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu li a:hover{
+    color: #243a82;
 }

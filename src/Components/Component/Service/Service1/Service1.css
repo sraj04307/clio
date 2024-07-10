@@ -123,3 +123,19 @@
 .cta-banner-2 .cta-wrapper-2 .author-icon::before {
     background: none;
 }
+
+@media (max-width: 768px){
+    .service-section-3 h2{
+        font-size: 20px;
+    }
+
+    .cta-banner-2 .cta-wrapper-2{
+        padding: 20px;
+        justify-content: start;
+    }
+
+    .cta-banner-2 .cta-wrapper-2 h3 {
+        text-align: start;
+        font-size: 20px;
+    }
+}

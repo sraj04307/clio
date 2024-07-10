@@ -47,3 +47,26 @@ form .btn-sub{
 form .btn-sub:hover{
     background-color: #2198d5;
 }
+
+@media (max-width: 426px){
+    .contact-wrapper-2 .contact-left-items .contact-info-area-2 {
+        padding: 16px;
+    }
+
+    
+.contact-wrapper-2 .contact-left-items .contact-info-area-2 .contact-info-items .content h3 a {
+    font-size: 16px;
+}
+.contact-wrapper-2 .contact-left-items .contact-info-area-2 .contact-info-items .content h3 {
+    font-size: 16px;
+}
+
+    .contact-wrapper-2 .contact-left-items .contact-info-area-2 .contact-info-items {
+        flex-wrap:nowrap;
+
+    }
+
+    .contact-wrapper-2 .contact-content h2{
+        font-size: 20px;
+    }
+}

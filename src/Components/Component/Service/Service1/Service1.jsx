@@ -137,7 +137,7 @@ const Service = () => {
                      <div className="content">
                          <span>Call Us Now</span>
                          <h4>
-                             <Link to="tel:+2085550112">+208-555-0112</Link>
+                             <Link to="tel:+918368629185">+918368629185</Link>
                          </h4>
                      </div>
                 </div>

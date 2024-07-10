@@ -49,15 +49,11 @@ const Footer = () => {
                 <div className="content">
                     <p>Location</p>
                     <h3>
-                        <Link>C 232, Ground floor Sector MU 1<br/>
+                        <Link className='d-block d-lg-none'>
+                        Greater Noida, UP (201310)</Link>
+                        <Link className='d-none d-lg-block'>C 232, Ground floor Sector MU 1<br/>
                         Greater Noida, UP (201310)</Link>
                     </h3>
-                    {/* <h3><a>
-                    C 232, Ground floor Sector MU 1<br/>
-                    Greater Noida, UP (201310)
-                    </a>
-                   
-                    </h3> */}
                 </div>
             </div>
         </div>    

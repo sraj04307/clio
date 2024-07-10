@@ -28,9 +28,9 @@ const Card1 = ({id}) => {
                         </li>
                     </ul>
                     <h3>
-                        <Link to="news-details.html">Simplify Streamline Succeed  IT Solutions</Link>
+                        <Link to="">Simplify Streamline Succeed  IT Solutions</Link>
                     </h3>
-                    <Link to="blogdetails" className="theme-btn-2 mt-3">
+                    <Link to="/blog-details" className="theme-btn-2 mt-3">
                         read More
                         <i className="fa-solid fa-arrow-right-long"></i>
                     </Link>

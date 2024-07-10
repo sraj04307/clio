@@ -1,26 +1,3 @@
-.achievement-wrapper.style-2 .counter-area .counter-items:not(:last-child) {
-    border-right: 2px solid rgba(243, 247, 251, 0.16);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-    display: flex; 
-    align-items: center;
-    gap: 20px;
-}
-
-.achievement-wrapper .counter-area .counter-items:not(:last-child) {
-    border-right: 1px solid var(--border3);
-    padding-right: 40px;
-}
-
-.achievement-wrapper.style-2 .counter-area {
-    gap: 40px;
-}
 
 .achievement-section-3{
     background: url('../../../assets/img/desktop-with-computer-cloud-computing-screen-modern-home-office-with-cloud-computing-concept.jpg');
@@ -29,3 +6,11 @@
     background-attachment: fixed;
 
 }
+
+.counter-container{
+    color: white;
+}
+.counter-container h2{
+    color: white;
+}
+

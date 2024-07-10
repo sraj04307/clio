@@ -185,3 +185,9 @@
 .contact-info-area .contact-info-items:not(:last-child) {
     border-right: none;
 }
+
+@media (max-width: 768px){
+    .contact-info-area {
+        flex-direction: column;
+    }
+}

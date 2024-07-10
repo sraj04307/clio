@@ -1,13 +1,14 @@
-import React, { useState } from 'react'
+import React, {useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Header.css'
 import img from '../../../assets/img/logo/img1.png'
 
 const Header = () => {
 
-    const [active1, setActive1] = useState(false);
-    const [active2, setActive2] = useState(false);
+    // const [active1, setActive1] = useState(false);
+    // const [active2, setActive2] = useState(false);
     const [active3, setActive3] = useState(false);
+    const [active4, setActive4] = useState(false);
 
     return (
         <header>
@@ -195,7 +196,7 @@ const Header = () => {
                                 <img src={img} className='logo2' alt="logo-img" />
                             </Link>
                         </div>
-                        <div className='close-btn-container' onClick={()=>setActive3(!active3)}>
+                        <div className='close-btn-container' onClick={() => setActive3(!active3)}>
                             <i className="fa-regular fa-circle-xmark"></i>
                         </div>
                     </div>
@@ -203,136 +204,39 @@ const Header = () => {
 
                     <nav id="mobile-menu" className="px-2">
                         <ul>
-                            <li className="has-dropdown active menu-thumb">
-                                <NavLink to="/">
-                                    Home
-                                </NavLink>
-                            </li>
-
                             <li>
-                                <NavLink >
-                                    Our Story
-                                    <i className="fas fa-angle-down" onClick={() => setActive1(!active1)}></i>
-                                </NavLink>
-                                <ul className={active1 ? "submenu active1" : "submenu"}>
-                                    <li><Link to="/about">About Us</Link></li>
-                                    <li><Link to="/blog">Blog</Link></li>
-                                    <li><Link to="/happyclient">Our Happy Client</Link></li>
-                                    <li><Link to="/clienttestimonial">Client Testimonial</Link></li>
-                                    <li><Link to="/ourexperts">Our Experts</Link></li>
+                                <Link to='/' onClick={() => setActive3(false)}>Home</Link>
+                            </li>
+                            <li>
+                                <Link to='/about' onClick={() => setActive3(false)}>About</Link>
+                            </li>
+                            <li>
+                                <Link to='/blog' onClick={() => setActive3(false)}>Blog</Link>
+                            </li>
+                            <li className='service-menu'>
+                                <div>
+                                    <Link to='/service' onClick={() => setActive3(false)}>Service</Link>
+
+                                    <i className="fa-solid fa-caret-down" onClick={()=>setActive4(!active4)}></i>
+                                </div>
+
+                                <ul className={active4?'active4':''}>
+                                    <li><Link to='/graphic-design' onClick={() => setActive3(false)}>Graphic Designing</Link></li>
+                                    <li><Link to='/web-development' onClick={() => setActive3(false)}>Web Development</Link></li>
+                                    <li><Link to='/ecommerce-solution' onClick={() => setActive3(false)}>Ecommerce Solution</Link></li>
+                                    <li><Link to='/digital-marketing' onClick={() => setActive3(false)}>Digital Marketing</Link></li>
+                                    <li><Link to='/app-development' onClick={() => setActive3(false)}>App Development</Link></li>
+                                    <li><Link to='/web-accesseblity' onClick={() => setActive3(false)}>Web Acceseblity</Link></li>
                                 </ul>
                             </li>
-
-                            <li className="has-dropdown">
-                                <NavLink to="/service">
-                                    Our Service
-                                    <i className="fas fa-angle-down" onClick={() => setActive2(!active2)}></i>
-                                </NavLink>
-                                <ul className={active2 ? "submenu active2" : "submenu"}>
-                                    <li className="has-dropdown">
-                                        <Link to='/graphic-design'>
-                                            Graphics Designing
-                                            {/* <i className="fas fa-angle-down"></i> */}
-                                        </Link>
-                                        {/* <ul className="submenu">
-                                                                <li><Link to="websitedesign">Website Designing</Link></li>
-                                                                <li><Link to="logodesign">Logo Designing</Link></li>
-                                                                <li><Link to="productdesign">Product Designing</Link></li>
-                                                                <li><Link to="socialmediacreativedesign">Social Media Creative Designing</Link></li>
-
-                                                            </ul> */}
-                                    </li>
-                                    <li className="has-dropdown">
-                                        <Link to='/web-development'>
-                                            Web Development
-                                            {/* <i className="fas fa-angle-down"></i> */}
-                                        </Link>
-                                        {/* <ul className="submenu">
-                                                                <li><Link to="staticebsitedevelopment">Static Website Development</Link></li>
-                                                                <li><Link to="cmsdevelopment">CMS Development</Link></li>
-                                                                <li><Link to="wordpressdevelopment">WordPress Development</Link></li>
-                                                                <li><Link to="phpdevelopment">PHP Development</Link></li>
-                                                                <li><Link to="codeignitorevelopment">CodeIgniter Development</Link></li>
-                                                                <li><Link to="cakephpdevelopment">CakePHP Development</Link></li>
-                                                                <li><Link to="laraveldevelopment">Laravel Development</Link></li>
-                                                                <li><Link to="angularjsdevelopment">Angular JS Development</Link></li>
-                                                                <li><Link to="wixdevelopment">WIX Development</Link></li>
-                                                            </ul> */}
-                                    </li>
-                                    <li className="has-dropdown">
-                                        <Link to='/ecommerce-solution'>
-                                            E-commerce Solution
-                                            {/* <i className="fas fa-angle-down"></i> */}
-                                        </Link>
-                                        {/* <ul className="submenu">
-                                                                <li><Link to="wocommercedevelopment">WooCommerce Development</Link></li>
-                                                                <li><Link to="magentodevelopment">Magento Development</Link></li>
-                                                                <li><Link to="shopifydevelopment">Shopify Development</Link></li>
-                                                                <li><Link to="opencartdevelopment">OpenCart Development</Link></li>
-                                                                <li><Link to="customecommercedevelopment">Custom E-commerce Development</Link></li>
-                                                            </ul> */}
-                                    </li>
-                                    <li className="has-dropdown">
-                                        <Link to="/digital-marketing">
-                                            Digital Marketing
-                                            {/* <i className="fas fa-angle-down"></i> */}
-                                        </Link>
-                                        {/* <ul className="submenu">
-                                                                <li><Link to="seo">Search Engine Optimization (SEO)</Link></li>
-                                                                <li><Link to="smo">Social Media Optimization (SMO)</Link></li>
-                                                                <li><Link to="smm">Social Media Marketing (SMM)</Link></li>
-                                                                <li><Link to="googlead">Google Ad Campaign</Link></li>
-                                                            </ul> */}
-                                    </li>
-                                    <li className="has-dropdown">
-                                        <Link to='/app-development'>
-                                            App Development
-                                            {/* <i className="fas fa-angle-down"></i> */}
-                                        </Link>
-                                        {/* <ul className="submenu">
-                                                                <li><Link to="androiddevelopment">Android App Development</Link></li>
-                                                                <li><Link to="iosdevelopment">iOS App Development</Link></li>
-                                                                <li><Link to="hybridappdevelopment">Hybrid App Development</Link></li>
-                                                                <li><Link to="nativeappdevelopment">Native App Development</Link></li>
-                                                            </ul> */}
-                                    </li>
-                                    {/* <li>
-                                                            <Link to="gps">
-                                                                GPS Tracking Solution
-
-                                                            </Link>
-
-                                                        </li> */}
-                                    <li>
-                                        <Link to="/web-accesseblity">
-                                            Web Accessibility
-
-                                        </Link>
-
-                                    </li>
-                                    {/* <li>
-                                                            <Link to="iot">
-                                                                IOT Development
-
-                                                            </Link>
-
-                                                        </li> */}
-
-                                </ul>
-                            </li>
-
                             <li>
-                                <NavLink to="/industries">
-                                    Industries
-                                </NavLink>
+                                <Link to='/industries' onClick={() => setActive3(false)}>Industries</Link>
                             </li>
-
                             <li>
-                                <NavLink to="/portfolio">Portfolio</NavLink>
+                                <Link to='/portfolio' onClick={() => setActive3(false)}>Portfolio</Link>
                             </li>
-
                             <li>
-                                <NavLink to="/contact">Contact Us</NavLink>
+                                <Link to='/contact' onClick={() => setActive3(false)}>Contact Us</Link>
                             </li>
                         </ul>
                     </nav>
